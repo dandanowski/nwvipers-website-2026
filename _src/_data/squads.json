@@ -1,0 +1,289 @@
+{
+    "seniorKitted": {
+        "name": "Senior Kitted",
+        "description": "Senior Kitted",
+        "image": "/assets/squads/senior-kitted.jpg",
+        "roster": [
+            {
+                "id": "brady-owen",
+                "firstName": "Owen",
+                "lastName": "Brady",
+                "position": "G",
+                "number": 69
+            },
+            {
+                "id": "burgess-harry",
+                "firstName": "Harry",
+                "lastName": "Burgess",
+                "position": "?",
+                "number": 111
+            },
+            {
+                "id": "callahan-william",
+                "firstName": "William",
+                "lastName": "Callahan",
+                "position": "?",
+                "number": 111
+            },
+            {
+                "id": "chambers-harry",
+                "firstName": "Harry",
+                "lastName": "Chambers",
+                "position": "WR",
+                "number": 111
+            },
+            {
+                "id": "colhoun-jack",
+                "firstName": "Jack",
+                "lastName": "Colhoun",
+                "position": "WR",
+                "number": 111
+            },
+            {
+                "id": "cowan-michael",
+                "firstName": "Michael",
+                "lastName": "Cowan",
+                "position": "?",
+                "number": 111
+            },
+            {
+                "id": "craig-finn",
+                "firstName": "Finn",
+                "lastName": "Craig",
+                "position": "LB",
+                "number": 111
+            },
+            {
+                "id": "creswell-alan-lee",
+                "firstName": "Alan-lee",
+                "lastName": "Creswell",
+                "position": "RB",
+                "number": 111
+            },
+            {
+                "id": "curran-cathal",
+                "firstName": "Cathal",
+                "lastName": "Curran",
+                "position": "T",
+                "number": 111
+            },
+            {
+                "id": "devlin-sean",
+                "firstName": "Sean",
+                "lastName": "Devlin",
+                "position": "S",
+                "number": 111
+            },
+            {
+                "id": "duncan-johbrad",
+                "firstName": "JB",
+                "lastName": "Duncan",
+                "position": "DE",
+                "number": 111
+            },
+            {
+                "id": "ferris-josh",
+                "firstName": "Josh",
+                "lastName": "Ferris",
+                "position": "LB",
+                "number": 111
+            },
+            {
+                "id": "flanagan-keelan",
+                "firstName": "Keelan",
+                "lastName": "Flanagan",
+                "position": "DT",
+                "number": 111
+            },
+            {
+                "id": "gallagher-michael",
+                "firstName": "Michael",
+                "lastName": "Gallagher",
+                "position": "DT",
+                "number": 111
+            },
+            {
+                "id": "gordon-patrick",
+                "firstName": "Patrick",
+                "lastName": "Gordon",
+                "position": "CB",
+                "number": 111
+            },
+            {
+                "id": "harris-leroy",
+                "firstName": "Leroy",
+                "lastName": "Harris",
+                "position": "C",
+                "number": 111
+            },
+            {
+                "id": "lecky-lewis",
+                "firstName": "Lewis",
+                "lastName": "Lecky",
+                "position": "WR",
+                "number": 111
+            },
+            {
+                "id": "lyons-niall",
+                "firstName": "Niall",
+                "lastName": "Lyons",
+                "position": "LB / G",
+                "number": 111
+            },
+            {
+                "id": "mccafferty-chris",
+                "firstName": "Chris",
+                "lastName": "McCafferty",
+                "position": "TE",
+                "number": 111
+            },
+            {
+                "id": "mccartney-lorcan",
+                "firstName": "Lorcan",
+                "lastName": "McCartney",
+                "position": "QB / TE",
+                "number": 111
+            },
+            {
+                "id": "mckee-johnpaul",
+                "firstName": "JP",
+                "lastName": "McKee",
+                "position": "DE",
+                "number": 42
+            },
+            {
+                "id": "mclaughlin-caolan",
+                "firstName": "Caolan",
+                "lastName": "McLaughlin",
+                "position": "??",
+                "number": 111
+            },
+            {
+                "id": "moran-chris",
+                "firstName": "Chris",
+                "lastName": "Moran",
+                "position": "??",
+                "number": 111
+            },
+            {
+                "id": "murphy-colum",
+                "firstName": "Colum",
+                "lastName": "Murphy",
+                "position": "S",
+                "number": 111
+            },
+            {
+                "id": "murray-neil",
+                "firstName": "Neil",
+                "lastName": "Murray",
+                "position": "TE",
+                "number": 111
+            },
+            {
+                "id": "naulty-mike",
+                "firstName": "Mike",
+                "lastName": "Naulty",
+                "position": "QB",
+                "number": 17
+            },
+            {
+                "id": "okane-evan",
+                "firstName": "Evan",
+                "lastName": "O'Kane",
+                "position": "DB",
+                "number": 111
+            },
+            {
+                "id": "quinn-darren",
+                "firstName": "Darren",
+                "lastName": "Quinn",
+                "position": "LB / RB",
+                "number": 111
+            },
+            {
+                "id": "reed-josh",
+                "firstName": "Josh",
+                "lastName": "Reed",
+                "position": "LB",
+                "number": 111
+            },
+            {
+                "id": "semple-daniel",
+                "firstName": "Daniel",
+                "lastName": "Semple",
+                "position": "DB",
+                "number": 111
+            },
+            {
+                "id": "wilkinson-luke",
+                "firstName": "Luke",
+                "lastName": "Wilkinson",
+                "position": "DL",
+                "number": 111
+            },
+            {
+                "id": "wilkinson-matthew",
+                "firstName": "Matthew",
+                "lastName": "Wilkinson",
+                "position": "DB",
+                "number": 111
+            }
+        ]
+    },
+    "womensFlag": {
+        "name": "Women's Flag",
+        "description": "Women's Flag",
+        "image": "/assets/squads/womens-flag.jpg",
+        "roster": [
+            {
+                "id": "mcdaid-rachel",
+                "firstName": "Rachel",
+                "lastName": "McDaid",
+                "position": "WR / DB",
+                "number": 5
+            },
+            {
+                "id": "ward-aine",
+                "firstName": "Aine",
+                "lastName": "Ward",
+                "position": "WR / CB",
+                "number": 11
+            },
+            {
+                "id": "gorham-amy",
+                "firstName": "Amy",
+                "lastName": "Gorham",
+                "position": "WR / RSH",
+                "number": 7
+            },
+            {
+                "id": "phillips-cara",
+                "firstName": "Cara",
+                "lastName": "Phillips",
+                "position": "QB",
+                "number": 28
+            },
+            {
+                "id": "mazdai-roxanna",
+                "firstName": "Roxanna",
+                "lastName": "Mazdai",
+                "position": "CB / WR",
+                "number": 16
+            },
+            {
+                "id": "sadlon-tia",
+                "firstName": "Tia",
+                "lastName": "Sadlon",
+                "position": "C / DB",
+                "number": 36
+            },
+            {
+                "id": "doherty-maeve",
+                "firstName": "Maeve",
+                "lastName": "Doherty",
+                "position": "CB / WR",
+                "number": 12
+            }
+        ]
+    }
+}

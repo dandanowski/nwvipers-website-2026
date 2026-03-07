@@ -1,0 +1,89 @@
+.players {
+    container-name: players;
+    container-type: inline-size;
+    padding: var(--core--spacing-4xl) 0;
+    h2 {
+        font: var(--sem--typo-headline-sm);
+    }
+}
+
+.players__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--core--spacing-2xl);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.players__grid__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    text-align: left;
+    background-color: oklch(from var(--core--color-ui-tertiary-t010) l c h / 0.25);
+    border: 1px solid var(--core--color-ui-neutral-n020);
+    border-radius: var(--core--shape-radius-xl) 0 var(--core--shape-radius-xl) 0;
+    overflow: hidden;
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        height: 100%;
+        width: 40%;
+        background-color: var(--core--color-ui-neutral-n050);
+        background-size: cover;
+        background-position: top;
+        font-feature-settings: "tnum";
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        height: 100%;
+        width: 60%;
+        padding: var(--core--spacing-xl) var(--core--spacing-2xl);
+    }
+}
+
+.players__grid__item__number {
+    font: var(--sem--typo-headline-md);
+    line-height: 0.75em;
+    color: var(--core--color-ui-secondary-s080);
+}
+
+.players__grid__item__name {
+    font: var(--sem--typo-title-md);
+    font-weight: bold;
+}
+
+.players__grid__item__position {
+    font: var(--sem--typo-title-sm);
+    color: var(--core--color-ui-neutral-n060);
+}
+
+.players__footer {
+    margin-top: var(--core--spacing-3xl);
+    text-align: center;
+    a {
+        color: var(--core--color-ui-secondary-s080);
+        text-decoration: none;
+        &:hover {
+            color: var(--core--color-ui-secondary-s060);
+        }
+    }
+}
+
+@container players (width < 1120px) {
+    .players__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@container players (width < 740px) {
+    .players__grid {
+        grid-template-columns: 1fr;
+    }
+}

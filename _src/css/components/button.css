@@ -1,0 +1,13 @@
+.button {
+    display: inline-block;
+    padding: var(--core--spacing-xl) var(--core--spacing-2xl);
+    color: var(--sem--color-on-surface);
+    background-color: var(--sem--color-primary);
+    border-radius: var(--core--shape-radius-xl) 0 var(--core--shape-radius-xl) 0;
+    text-decoration: none;
+    font: var(--sem--typo-title-sm);
+    cursor: pointer;
+    &:hover {
+        background-color: oklch(from var(--sem--color-primary) calc(l * 0.5) c h / 1);
+    }
+}

@@ -1,0 +1,4 @@
+.page-content {
+    padding-block-start: var(--core--spacing-4xl);
+    padding-block-end: var(--core--spacing-4xl);
+}

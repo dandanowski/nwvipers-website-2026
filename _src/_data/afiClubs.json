@@ -1,0 +1,124 @@
+{
+    "all": [
+        {
+            "name": "Northwest Vipers",
+            "id": "northwest-vipers",
+            "location": "Derry/Londonderry",
+            "url": "https://www.northwestvipers.com/"
+        },
+        {
+            "name": "Belfast Knights",
+            "id": "belfast-knights",
+            "location": "Belfast, County Antrim",
+            "url": "https://www.belfastknights.com/"
+        },
+        {
+            "name": "Belfast Trojans",
+            "id": "belfast-trojans",
+            "location": "Belfast, County Antrim",
+            "url": "http://www.belfasttrojans.com/"
+        },
+        {
+            "name": "Carrickfergus Trojans",
+            "id": "carrickfergus-trojans",
+            "location": "Carrickfergus, County Antrim",
+            "url": "https://www.carrickfergustrojans.com/"
+        },
+        {
+            "name": "Craigavon Cowboys",
+            "id": "craigavon-cowboys",
+            "location": "Craigavon, County Armagh",
+            "url": "https://www.craigavoncowboys.com/"
+        },
+        {
+            "name": "Dublin Celts",
+            "id": "dublin-celts",
+            "location": "Dublin",
+            "url": "https://www.dublincelts.com/"
+        },
+        {
+            "name": "Dublin Rhinos",
+            "id": "dublin-rhinos",
+            "location": "Dublin",
+            "url": "https://www.dublinrhinos.com/"
+        },
+        {
+            "name": "Dublin Rebels",
+            "id": "dublin-rebels",
+            "location": "Dublin",
+            "url": "https://www.dublinrebels.com/"
+        },
+        {
+            "name": "Dublin Steamers",
+            "id": "dublin-steamers",
+            "location": "Dublin",
+            "url": "https://www.dublinsteamers.com/"
+        },
+        {
+            "name": "Dublin Wolves",
+            "id": "dublin-wolves",
+            "location": "Dublin",
+            "url": "https://www.dublinwolves.com/"
+        },
+        {
+            "name": "Galway Warriors",
+            "id": "galway-warriors",
+            "location": "Galway",
+            "url": "https://www.galwaywarriors.com/"
+        },
+        {
+            "name": "Louth Mavericks",
+            "id": "louth-mavericks",
+            "location": "Dundalk, County Louth",
+            "url": "https://www.louthmavericks.com/"
+        },
+        {
+            "name": "Munster Raiders",
+            "id": "munster-raiders",
+            "location": "Limerick",
+            "url": "https://www.munsterraiders.com/"
+        },
+        {
+            "name": "North Dublin Spartans",
+            "id": "north-dublin-spartans",
+            "location": "Dublin",
+            "url": "https://www.northdublinspartans.com/"
+        },
+        {
+            "name": "Portlaoise Panthers",
+            "id": "portlaoise-panthers",
+            "location": "Portlaoise, County Laois",
+            "url": "https://www.portlaoisepanthers.com/"
+        },
+        {
+            "name": "Sligo Saints",
+            "id": "sligo-saints",
+            "location": "Sligo",
+            "url": "https://www.sligosaints.com/"
+        },
+        {
+            "name": "South Dublin Panthers",
+            "id": "south-dublin-panthers",
+            "location": "Dublin",
+            "url": "https://www.southdublinpanthers.com/"
+        },
+        {
+            "name": "Tallaght Tornadoes",
+            "id": "tallaght-tornadoes",
+            "location": "Tallaght, Dublin",
+            "url": "https://www.tallaghttornadoes.com/"
+        },
+        {
+            "name": "Waterford Wolves",
+            "id": "waterford-wolves",
+            "location": "Waterford",
+            "url": "https://www.waterfordwolves.com/"
+        },
+        {
+            "name": "West Dublin Rhinos",
+            "id": "west-dublin-rhinos",
+            "location": "Dublin",
+            "url": "https://www.westdublinrhinos.com/"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "vipers-202602",
+  "version": "1.0.0",
+  "description": "Northwest Vipers American Football Club site",
+  "license": "ISC",
+  "author": "Dan Danowski <dan.danowski@gmail.com>",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev:11ty": "npx @11ty/eleventy --serve",
+    "build:11ty": "npx @11ty/eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

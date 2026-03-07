@@ -1,0 +1,155 @@
+:root {
+    /** Colors ----------------------------------------------------------------------- */
+
+    /* Primary */
+    --core--color-ui-primary-p000: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s000) c h / 1);
+    --core--color-ui-primary-p010: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s010) c h / 1);
+    --core--color-ui-primary-p020: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s020) c h / 1);
+    --core--color-ui-primary-p030: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s030) c h / 1);
+    --core--color-ui-primary-p040: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s040) c h / 1);
+    --core--color-ui-primary-p050: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s050) c h / 1);
+    --core--color-ui-primary-p060: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s060) c h / 1);
+    --core--color-ui-primary-p070: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s070) c h / 1);
+    --core--color-ui-primary-p080: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s080) c h / 1);
+    --core--color-ui-primary-p090: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s090) c h / 1);
+    --core--color-ui-primary-p095: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s095) c h / 1);
+    --core--color-ui-primary-p099: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s099) c h / 1);
+    --core--color-ui-primary-p100: oklch(from var(--seed--color-ui-primary) var(--util--color-ramp-s100) c h / 1);
+    /* Secondary */
+    --core--color-ui-secondary-s000: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s000) c h / 1);
+    --core--color-ui-secondary-s010: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s010) c h / 1);
+    --core--color-ui-secondary-s020: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s020) c h / 1);
+    --core--color-ui-secondary-s030: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s030) c h / 1);
+    --core--color-ui-secondary-s040: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s040) c h / 1);
+    --core--color-ui-secondary-s050: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s050) c h / 1);
+    --core--color-ui-secondary-s060: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s060) c h / 1);
+    --core--color-ui-secondary-s070: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s070) c h / 1);
+    --core--color-ui-secondary-s080: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s080) c h / 1);
+    --core--color-ui-secondary-s090: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s090) c h / 1);
+    --core--color-ui-secondary-s095: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s095) c h / 1);
+    --core--color-ui-secondary-s099: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s099) c h / 1);
+    --core--color-ui-secondary-s100: oklch(from var(--seed--color-ui-secondary) var(--util--color-ramp-s100) c h / 1);
+    /* Tertiary */
+    --core--color-ui-tertiary-t000: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s000) c h / 1);
+    --core--color-ui-tertiary-t010: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s010) c h / 1);
+    --core--color-ui-tertiary-t020: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s020) c h / 1);
+    --core--color-ui-tertiary-t030: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s030) c h / 1);
+    --core--color-ui-tertiary-t040: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s040) c h / 1);
+    --core--color-ui-tertiary-t050: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s050) c h / 1);
+    --core--color-ui-tertiary-t060: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s060) c h / 1);
+    --core--color-ui-tertiary-t070: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s070) c h / 1);
+    --core--color-ui-tertiary-t080: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s080) c h / 1);
+    --core--color-ui-tertiary-t090: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s090) c h / 1);
+    --core--color-ui-tertiary-t095: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s095) c h / 1);
+    --core--color-ui-tertiary-t099: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s099) c h / 1);
+    --core--color-ui-tertiary-t100: oklch(from var(--seed--color-ui-tertiary) var(--util--color-ramp-s100) c h / 1);
+    /* Neutral */
+    --core--color-ui-neutral-n000: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s000) c h / 1);
+    --core--color-ui-neutral-n010: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s010) c h / 1);
+    --core--color-ui-neutral-n020: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s020) c h / 1);
+    --core--color-ui-neutral-n030: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s030) c h / 1);
+    --core--color-ui-neutral-n040: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s040) c h / 1);
+    --core--color-ui-neutral-n050: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s050) c h / 1);
+    --core--color-ui-neutral-n060: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s060) c h / 1);
+    --core--color-ui-neutral-n070: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s070) c h / 1);
+    --core--color-ui-neutral-n080: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s080) c h / 1);
+    --core--color-ui-neutral-n090: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s090) c h / 1);
+    --core--color-ui-neutral-n095: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s095) c h / 1);
+    --core--color-ui-neutral-n099: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s099) c h / 1);
+    --core--color-ui-neutral-n100: oklch(from var(--seed--color-ui-neutral) var(--util--color-ramp-s100) c h / 1);
+    /* Feedback */
+    --core--color-feedback-success-s000: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s000) c h / 1);
+    --core--color-feedback-success-s010: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s010) c h / 1);
+    --core--color-feedback-success-s020: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s020) c h / 1);
+    --core--color-feedback-success-s030: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s030) c h / 1);
+    --core--color-feedback-success-s040: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s040) c h / 1);
+    --core--color-feedback-success-s050: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s050) c h / 1);
+    --core--color-feedback-success-s060: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s060) c h / 1);
+    --core--color-feedback-success-s070: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s070) c h / 1);
+    --core--color-feedback-success-s080: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s080) c h / 1);
+    --core--color-feedback-success-s090: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s090) c h / 1);
+    --core--color-feedback-success-s095: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s095) c h / 1);
+    --core--color-feedback-success-s099: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s099) c h / 1);
+    --core--color-feedback-success-s100: oklch(from var(--seed--color-feedback-success) var(--util--color-ramp-s100) c h / 1);
+    /* Warning */
+    --core--color-feedback-warning-w000: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s000) c h / 1);
+    --core--color-feedback-warning-w010: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s010) c h / 1);
+    --core--color-feedback-warning-w020: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s020) c h / 1);
+    --core--color-feedback-warning-w030: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s030) c h / 1);
+    --core--color-feedback-warning-w040: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s040) c h / 1);
+    --core--color-feedback-warning-w050: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s050) c h / 1);
+    --core--color-feedback-warning-w060: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s060) c h / 1);
+    --core--color-feedback-warning-w070: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s070) c h / 1);
+    --core--color-feedback-warning-w080: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s080) c h / 1);
+    --core--color-feedback-warning-w090: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s090) c h / 1);
+    --core--color-feedback-warning-w095: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s095) c h / 1);
+    --core--color-feedback-warning-w099: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s099) c h / 1);
+    --core--color-feedback-warning-w100: oklch(from var(--seed--color-feedback-warning) var(--util--color-ramp-s100) c h / 1);
+    /* Error */
+    --core--color-feedback-error-e000: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s000) c h / 1);
+    --core--color-feedback-error-e010: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s010) c h / 1);
+    --core--color-feedback-error-e020: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s020) c h / 1);
+    --core--color-feedback-error-e030: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s030) c h / 1);
+    --core--color-feedback-error-e040: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s040) c h / 1);
+    --core--color-feedback-error-e050: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s050) c h / 1);
+    --core--color-feedback-error-e060: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s060) c h / 1);
+    --core--color-feedback-error-e070: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s070) c h / 1);
+    --core--color-feedback-error-e080: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s080) c h / 1);
+    --core--color-feedback-error-e090: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s090) c h / 1);
+    --core--color-feedback-error-e095: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s095) c h / 1);
+    --core--color-feedback-error-e099: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s099) c h / 1);
+    --core--color-feedback-error-e100: oklch(from var(--seed--color-feedback-error) var(--util--color-ramp-s100) c h / 1);
+    /* Info */
+    --core--color-feedback-info-i000: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s000) c h / 1);
+    --core--color-feedback-info-i010: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s010) c h / 1);
+    --core--color-feedback-info-i020: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s020) c h / 1);
+    --core--color-feedback-info-i030: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s030) c h / 1);
+    --core--color-feedback-info-i040: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s040) c h / 1);
+    --core--color-feedback-info-i050: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s050) c h / 1);
+    --core--color-feedback-info-i060: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s060) c h / 1);
+    --core--color-feedback-info-i070: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s070) c h / 1);
+    --core--color-feedback-info-i080: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s080) c h / 1);
+    --core--color-feedback-info-i090: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s090) c h / 1);
+    --core--color-feedback-info-i095: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s095) c h / 1);
+    --core--color-feedback-info-i099: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s099) c h / 1);
+    --core--color-feedback-info-i100: oklch(from var(--seed--color-feedback-info) var(--util--color-ramp-s100) c h / 1);
+
+    /** Fonts ----------------------------------------------------------------------- */
+    /* Font families */
+    --core--font-family-body: var(--seed--font-body), sans-serif;
+    --core--font-family-heading: var(--seed--font-heading), sans-serif;
+    /* Font sizes */
+    --core--font-size-xs: round(calc(var(--core--font-size-sm) / var(--seed--font-size-scale)), 1px);
+    --core--font-size-sm: round(calc(var(--core--font-size-md) / var(--seed--font-size-scale)), 1px);
+    --core--font-size-md: round(calc(var(--seed--font-size)), 1px);
+    --core--font-size-lg: round(calc(var(--core--font-size-md) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-xl: round(calc(var(--core--font-size-lg) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-2xl: round(calc(var(--core--font-size-xl) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-3xl: round(calc(var(--core--font-size-2xl) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-4xl: round(calc(var(--core--font-size-3xl) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-5xl: round(calc(var(--core--font-size-4xl) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-6xl: round(calc(var(--core--font-size-5xl) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-7xl: round(calc(var(--core--font-size-6xl) * var(--seed--font-size-scale)), 1px);
+    --core--font-size-8xl: round(calc(var(--core--font-size-7xl) * var(--seed--font-size-scale)), 1px);
+
+    /** Spacing ----------------------------------------------------------------------- */
+    --core--spacing-xs: round(calc(var(--core--spacing-sm) / var(--seed--spacing-scale) / var(--seed--spacing-scale)), 1px);
+    --core--spacing-sm: round(calc(var(--core--spacing-md) / var(--seed--spacing-scale)), 1px);
+    --core--spacing-md: round(calc(var(--seed--spacing)), 1px);
+    --core--spacing-lg: round(calc(var(--core--spacing-md) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-xl: round(calc(var(--core--spacing-lg) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-2xl: round(calc(var(--core--spacing-xl) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-3xl: round(calc(var(--core--spacing-2xl) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-4xl: round(calc(var(--core--spacing-3xl) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-5xl: round(calc(var(--core--spacing-4xl) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-6xl: round(calc(var(--core--spacing-5xl) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-7xl: round(calc(var(--core--spacing-6xl) * var(--seed--spacing-scale)), 1px);
+    --core--spacing-8xl: round(calc(var(--core--spacing-7xl) * var(--seed--spacing-scale)), 1px);
+
+    /** Shape ----------------------------------------------------------------------- */
+    --core--shape-radius-sm: round(calc(var(--core--shape-radius-md) / var(--seed--shape-scale)), 1px);
+    --core--shape-radius-md: round(calc(var(--seed--shape-radius)), 1px);
+    --core--shape-radius-lg: round(calc(var(--core--shape-radius-md) * var(--seed--shape-scale)), 1px);
+    --core--shape-radius-xl: round(calc(var(--core--shape-radius-lg) * var(--seed--shape-scale)), 1px);
+    --core--shape-radius-2xl: round(calc(var(--core--shape-radius-xl) * var(--seed--shape-scale)), 1px);
+}

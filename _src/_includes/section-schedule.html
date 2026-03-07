@@ -1,0 +1,25 @@
+<section class="schedule">
+    <div class="schedule__content content--wrap">
+        <h2>Upcoming Schedule</h2>
+        <nav class="schedule__grid">
+            {% for item in schedule.all where: "date", "after", "2026-03-04", limit: 4 %}
+            <div class="schedule__grid__item">
+                <header>
+                    <p class="schedule__grid__item__date">{{ item.date | date: "%d %B" }}</p>
+                    <p class="schedule__grid__item__year">{{ item.date | date: "%Y" }}</p>
+                    <p class="schedule__grid__item__time">{{ item.time }}</p>
+                </header>
+                <section>
+                    <p class="schedule__grid__item__squad">{{ item.squad }}</p>
+                    <p class="schedule__grid__item__opponent">{{ item.opponent }}</p>
+                    <p class="schedule__grid__item__location"><i class="fa-solid fa-location-dot"></i> {{ item.location
+                        }}</p>
+                </section>
+            </div>
+            {% endfor %}
+        </nav>
+        <div class="schedule__footer">
+            <a href="/schedule/">View Full Schedule</a>
+        </div>
+    </div>
+</section>

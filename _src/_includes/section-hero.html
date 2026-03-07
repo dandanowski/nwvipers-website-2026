@@ -1,0 +1,6 @@
+<section class="hero {% if page.url == '/' %}hero--section{% else %}hero--page{% endif %}">
+    <div class="hero__content content--wrap">
+        <h2>{{ title | default: "Northwest Vipers" }}</h2>
+        <p>{{ subtitle | default: "" }}</p>
+    </div>
+</section>

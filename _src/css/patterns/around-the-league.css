@@ -1,0 +1,32 @@
+.around-the-league {
+    padding: var(--core--spacing-4xl) 0;
+    h2 {
+        font: var(--sem--typo-headline-sm);
+        text-transform: lowercase;
+    }
+    ul.squads {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: var(--core--spacing-xl);
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            a {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: var(--core--spacing-md);
+                height: 100%;
+                padding: var(--core--spacing-md);
+                border-radius: var(--core--shape-radius-lg);
+                text-align: center;
+                text-decoration: none;
+                color: var(--sem--color-on-surface);
+                font: var(--sem--typo-title-sm);
+                background-color: oklch(from var(--sem--color-surface-container) l c h / 0.25);
+            }
+        }
+    }
+}

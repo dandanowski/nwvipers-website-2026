@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% render "head.html", site: site %}
+
+<body class="{{ bodyClassName }}">
+    <div class="site--wrap">
+        {% render "site-header.html", site: site %}
+
+        <main class="site--content" aria-label="Content">
+            {{ content }}
+            {% include "section-league.html" %}
+        </main>
+        {% render "site-footer.html", site: site %}
+    </div>
+    <script src="/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/9d6932e854.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

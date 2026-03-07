@@ -1,0 +1,50 @@
+.hero {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-bottom: var(--core--spacing-4xl);
+    background-image: url("/assets/images/hero/sr-kitted-202505.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h2 {
+        margin: 0;
+        padding: 0;
+        font: var(--sem--typo-display-md);
+        line-height: 0.8em;
+        text-transform: lowercase;
+        color: var(--core--color-ui-secondary-s090);
+        text-shadow:
+            4px 4px 0px var(--core--color-ui-neutral-n000),
+            -4px -4px 0px var(--core--color-ui-neutral-n000),
+            4px -4px 0px var(--core--color-ui-neutral-n000),
+            -4px 4px 0px var(--core--color-ui-neutral-n000);
+    }
+    p {
+        margin: 0;
+        padding: 0;
+        font: var(--sem--typo-body-lg);
+        color: var(--core--color-ui-neutral-n099);
+        text-shadow:
+            2px 2px 2px var(--core--color-ui-neutral-n000),
+            -2px -2px 2px var(--core--color-ui-neutral-n000),
+            2px -2px 2px var(--core--color-ui-neutral-n000),
+            -2px 2px 2px var(--core--color-ui-neutral-n000);
+    }
+}
+
+.hero--section {
+    min-height: 620px;
+    h2 {
+        line-height: 0.8em;
+    }
+}
+
+.hero--page {
+    min-height: 220px;
+    padding-bottom: var(--core--spacing-xl);
+    h2 {
+        font: var(--sem--typo-display-sm);
+        line-height: 0.8em;
+    }
+}

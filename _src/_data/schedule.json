@@ -1,0 +1,68 @@
+{
+    "all": [
+        {
+            "squad": "senior-kitted",
+            "date": "2026-03-04",
+            "time": "14:00",
+            "opponent": "Dublin Rebels",
+            "location": "Derry",
+            "type": "home"
+        },
+        {
+            "squad": "senior-kitted",
+            "date": "2026-03-06",
+            "time": "14:00",
+            "opponent": "Belfast Trojans",
+            "location": "Belfast",
+            "type": "away"
+        },
+        {
+            "squad": "womens-flag",
+            "date": "2026-03-09",
+            "time": "14:00",
+            "opponent": "Sligo Saints",
+            "location": "Sligo",
+            "type": "away"
+        },
+        {
+            "squad": "womens-flag",
+            "date": "2026-03-12",
+            "time": "14:00",
+            "opponent": "Louth Mavericks",
+            "location": "Derry",
+            "type": "home"
+        },
+        {
+            "squad": "womens-flag",
+            "date": "2026-03-16",
+            "time": "14:00",
+            "opponent": "Louth Mavericks",
+            "location": "Derry",
+            "type": "home"
+        },
+        {
+            "squad": "senior-kitted",
+            "date": "2026-03-18",
+            "time": "14:00",
+            "opponent": "Louth Mavericks",
+            "location": "Derry",
+            "type": "home"
+        },
+        {
+            "squad": "senior-kitted",
+            "date": "2026-03-22",
+            "time": "14:00",
+            "opponent": "Louth Mavericks",
+            "location": "Derry",
+            "type": "home"
+        },
+        {
+            "squad": "senior-kitted",
+            "date": "2026-03-29",
+            "time": "14:00",
+            "opponent": "Louth Mavericks",
+            "location": "Derry",
+            "type": "home"
+        }
+    ]
+}
