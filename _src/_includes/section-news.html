@@ -1,0 +1,14 @@
+{% assign now = 'now' | date: '%Y-%m-%d' %}
+{%- if collections.news.size > 0 -%}
+  <ul class="card--list">
+    {%- liquid
+      echo now
+      for article in collections.news reversed
+        assign articleDate = article.data.date | date: '%Y-%m-%d'
+        if articleDate <= now
+          render 'news-card.html', article: article
+        endif
+      endfor
+    -%}
+  </ul>
+{% endif %}

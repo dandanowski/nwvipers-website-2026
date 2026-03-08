@@ -1,0 +1,13 @@
+<article class="card card--news">
+    <header>
+        <p>{{ article.data.title }}</p>
+        <h2>{{ article.data.subtitle }}</h2>
+    </header>
+    <section>
+        <p>{{ article.data.date }}</p>
+        <p>{{ article.data.page.excerpt | strip_html }}</p>
+    </section>
+    <footer>
+        <a href="{{ article.url }}">Read More</a>
+    </footer>
+</article>
