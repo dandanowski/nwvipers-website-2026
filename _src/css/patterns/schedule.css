@@ -1,4 +1,6 @@
 .schedule {
+    container-name: schedule;
+    container-type: inline-size;
     padding: var(--core--spacing-4xl) 0;
     h2 {
         font: var(--sem--typo-headline-sm);
@@ -73,5 +75,11 @@
         &:hover {
             color: var(--core--color-ui-secondary-s060);
         }
+    }
+}
+
+@container schedule (width < 860px) {
+    .schedule__grid {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,4 +1,6 @@
 section.squads {
+    container-name: squads;
+    container-type: inline-size;
     padding: var(--core--spacing-4xl) 0;
     background-color: oklch(from var(--core--color-ui-tertiary-t010) l c h / 0.25);
     h2 {
@@ -61,5 +63,11 @@ section.squads {
         color: var(--core--color-ui-neutral-n099);
         padding: 0;
         margin: 0;
+    }
+}
+
+@container squads (width < 860px) {
+    .squads__grid {
+        grid-template-columns: 1fr;
     }
 }
