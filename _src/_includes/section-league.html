@@ -3,16 +3,14 @@
         <h2>Around the league</h2>
         <ul class="squads">
             <li class="club club--afi">
-                <a href="https://www.americanfootball.ie/">
-                    <img src="" alt="" />
-                    <span>American Football Ireland</span>
+                <a href="https://www.americanfootball.ie/" style="background-image: url('/assets/afi-logos/afi.png');"
+                    title="American Football Ireland">
                 </a>
             </li>
             {% for club in afiClubs.all %}
             <li class="club club--{{ club.id }}">
-                <a href="{{ club.url }}">
-                    <img src="" alt="" />
-                    <span>{{ club.name }}</span>
+                <a href="{{ club.url }}" style="background-image: url('/assets/afi-logos/{{ club.id }}.png');"
+                    title="{{ club.name }}">
                 </a>
             </li>
             {% endfor %}

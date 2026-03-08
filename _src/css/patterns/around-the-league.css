@@ -13,14 +13,14 @@
         list-style: none;
         li {
             a {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: var(--core--spacing-md);
-                height: 100%;
+                display: block;
+                height: 80px;
+                width: 100%;
                 padding: var(--core--spacing-md);
                 border-radius: var(--core--shape-radius-lg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
                 text-align: center;
                 text-decoration: none;
                 color: var(--sem--color-on-surface);

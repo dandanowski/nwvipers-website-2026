@@ -16,13 +16,37 @@
             "name": "Belfast Trojans",
             "id": "belfast-trojans",
             "location": "Belfast, County Antrim",
-            "url": "http://www.belfasttrojans.com/"
+            "url": "https://www.belfasttrojans.com/"
         },
         {
-            "name": "Carrickfergus Trojans",
-            "id": "carrickfergus-trojans",
-            "location": "Carrickfergus, County Antrim",
-            "url": "https://www.carrickfergustrojans.com/"
+            "name": "Causeway Giants",
+            "id": "causeway-giants",
+            "location": "County Antrim",
+            "url": "https://www.causewaygiants.com/"
+        },
+        {
+            "name": "Cill Dara Crusaders",
+            "id": "cill-dara-crusaders",
+            "location": "Kildare",
+            "url": "https://www.cilldaracrusaders.com/"
+        },
+        {
+            "name": "Cork Admirals",
+            "id": "cork-admirals",
+            "location": "Cork",
+            "url": "https://www.corkadmirals.com/"
+        },
+        {
+            "name": "Cork City Outlaws",
+            "id": "cork-city-outlaws",
+            "location": "Cork",
+            "url": "https://www.corkcityoutlaws.com/"
+        },
+        {
+            "name": "County Antrim Stags",
+            "id": "county-antrim-stags",
+            "location": "County Antrim",
+            "url": ""
         },
         {
             "name": "Craigavon Cowboys",
@@ -31,94 +55,106 @@
             "url": "https://www.craigavoncowboys.com/"
         },
         {
-            "name": "Dublin Celts",
-            "id": "dublin-celts",
+            "name": "Dublin Bay Raptors",
+            "id": "dublin-bay-raptors",
             "location": "Dublin",
-            "url": "https://www.dublincelts.com/"
+            "url": ""
         },
         {
-            "name": "Dublin Rhinos",
-            "id": "dublin-rhinos",
+            "name": "Dublin City Quetzals",
+            "id": "dublin-city-quetzals",
             "location": "Dublin",
-            "url": "https://www.dublinrhinos.com/"
+            "url": ""
+        },
+        {
+            "name": "Dublin City Wolves",
+            "id": "dublin-city-wolves",
+            "location": "Dublin",
+            "url": ""
         },
         {
             "name": "Dublin Rebels",
             "id": "dublin-rebels",
             "location": "Dublin",
-            "url": "https://www.dublinrebels.com/"
+            "url": ""
         },
         {
-            "name": "Dublin Steamers",
-            "id": "dublin-steamers",
+            "name": "Dublin Red Bows",
+            "id": "dublin-red-bows",
             "location": "Dublin",
-            "url": "https://www.dublinsteamers.com/"
+            "url": ""
         },
         {
-            "name": "Dublin Wolves",
-            "id": "dublin-wolves",
-            "location": "Dublin",
-            "url": "https://www.dublinwolves.com/"
+            "name": "Dunboyne Wildcats",
+            "id": "dunboyne-wildcats",
+            "location": "Dunboyne, County Meath",
+            "url": ""
         },
         {
-            "name": "Galway Warriors",
-            "id": "galway-warriors",
-            "location": "Galway",
-            "url": "https://www.galwaywarriors.com/"
+            "name": "Edenderry Eagles",
+            "id": "edenderry-eagles",
+            "location": "Edenderry, County Offaly",
+            "url": ""
+        },
+        {
+            "name": "Lakeland Gators",
+            "id": "lakeland-gators",
+            "location": "",
+            "url": ""
+        },
+        {
+            "name": "Laois Labs",
+            "id": "laois-labs",
+            "location": "",
+            "url": ""
         },
         {
             "name": "Louth Mavericks",
             "id": "louth-mavericks",
-            "location": "Dundalk, County Louth",
-            "url": "https://www.louthmavericks.com/"
+            "location": "",
+            "url": ""
         },
         {
-            "name": "Munster Raiders",
-            "id": "munster-raiders",
-            "location": "Limerick",
-            "url": "https://www.munsterraiders.com/"
+            "name": "Maynooth University Hurricanes",
+            "id": "maynooth-university-hurricanes",
+            "location": "Maynooth, County Kildare",
+            "url": ""
         },
         {
-            "name": "North Dublin Spartans",
-            "id": "north-dublin-spartans",
-            "location": "Dublin",
-            "url": "https://www.northdublinspartans.com/"
-        },
-        {
-            "name": "Portlaoise Panthers",
-            "id": "portlaoise-panthers",
-            "location": "Portlaoise, County Laois",
-            "url": "https://www.portlaoisepanthers.com/"
-        },
-        {
-            "name": "Sligo Saints",
-            "id": "sligo-saints",
-            "location": "Sligo",
-            "url": "https://www.sligosaints.com/"
+            "name": "North Down Dragons",
+            "id": "north-down-dragons",
+            "location": "",
+            "url": ""
         },
         {
             "name": "South Dublin Panthers",
             "id": "south-dublin-panthers",
-            "location": "Dublin",
-            "url": "https://www.southdublinpanthers.com/"
+            "location": "",
+            "url": ""
         },
         {
-            "name": "Tallaght Tornadoes",
-            "id": "tallaght-tornadoes",
-            "location": "Tallaght, Dublin",
-            "url": "https://www.tallaghttornadoes.com/"
+            "name": "Ulster University Elks",
+            "id": "ulster-university-elks",
+            "location": "",
+            "url": ""
         },
         {
-            "name": "Waterford Wolves",
-            "id": "waterford-wolves",
-            "location": "Waterford",
-            "url": "https://www.waterfordwolves.com/"
+            "name": "University of Limerick Vikings",
+            "id": "university-of-limerick-vikings",
+            "location": "",
+            "url": ""
         },
         {
             "name": "West Dublin Rhinos",
             "id": "west-dublin-rhinos",
-            "location": "Dublin",
-            "url": "https://www.westdublinrhinos.com/"
+            "location": "",
+            "url": ""
+        },
+        {
+            "name": "Westmeath Minotaurs",
+            "id": "westmeath-minotaurs",
+            "location": "",
+            "url": ""
         }
     ]
 }
