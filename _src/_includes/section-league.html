@@ -8,9 +8,10 @@
                 </a>
             </li>
             {% for club in afiClubs.all %}
-            <li class="club club--{{ club.id }}">
-                <a href="{{ club.url }}" style="background-image: url('/assets/afi-logos/{{ club.id }}.png');"
-                    title="{{ club.name }}">
+            <li class="club club--{{ club }}">
+                <a href="{{ afiClubs.profile[club].url }}"
+                    style="background-image: url('/assets/afi-logos/{{ club }}.png');"
+                    title="{{ afiClubs.profile[club].name }}">
                 </a>
             </li>
             {% endfor %}

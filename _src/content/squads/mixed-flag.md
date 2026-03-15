@@ -2,6 +2,7 @@
 title: Mixed Flag
 layout: page
 permalink: /squads/mixed-flag/
+squad: "mixed-flag"
 bodyClassName: squads
 subtitle: Mixed flag football for ages 16+
 ---

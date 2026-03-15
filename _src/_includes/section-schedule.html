@@ -1,25 +1,44 @@
-{% assign today = "now" | date: "%Y-%m-%d" %}
-{% assign squad = page.url | split: "/" | last %}
-{% echo squad %}
+{%-liquid
+assign today = "now" | date: "%Y-%m-%d"
+-%}
+{% if squad != false %}
 <section class="schedule">
     <div class="schedule__content content--wrap">
-        <h2>Upcoming Schedule</h2>
+        <h2>
+            {% if squad == 'all' %}
+            Upcoming
+            {% endif %}
+            Schedule
+        </h2>
         <nav class="schedule__grid">
             {% for item in collections.match %}
             {% assign match_date = item.data.date | date: "%Y-%m-%d" %}
-            {% if match_date > today %}
-            <div class="schedule__grid__item">
+            {% if squad == item.data.squad or squad == 'all' and match_date >= today %}
+            <div class="schedule__grid__item 
+            {% if match_date >= today -%}
+            schedule__grid__item--upcoming
+            {% elsif match_date < today -%}
+            schedule__grid__item--past
+            {% endif -%}
+            ">
                 <header>
                     <p class="schedule__grid__item__date">{{ item.data.date | date: "%d %b" }}</p>
-                    <p class="schedule__grid__item__year">{{ item.data.date | date: "%Y" }}</p>
                     <p class="schedule__grid__item__time">{{ item.data.time }}</p>
                 </header>
                 <section>
+                    {% if squad == 'all' %}
                     <p class="schedule__grid__item__squad">{{ item.data.squad }}</p>
-                    <p class="schedule__grid__item__opponent">{{ item.data.opponent }}</p>
+                    {% endif %}
+                    <p class="schedule__grid__item__type">{{ item.data.type }}</p>
+                    <p class="schedule__grid__item__opponent">{{ afiClubs.profile[item.data.opponent].name }}</p>
+                    {% if item.data.score %}
+                    <p class="schedule__grid__item__result"><span class="win-loss"> {{ item.data.result }}</span> {{
+                        item.data.score }}</p>
+                    {% else %}
                     <p class="schedule__grid__item__location"><i class="fa-solid fa-location-dot"></i> {{
                         item.data.location
                         }}</p>
+                    {% endif %}
                 </section>
             </div>
             {% endif %}
@@ -30,3 +49,4 @@
         </div>
     </div>
 </section>
+{% endif %}

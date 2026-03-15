@@ -5,6 +5,6 @@ layout: default
 <section class="page-content content--wrap">
     {{ content }}
 </section>
-{% include "section-schedule.html" %}
-{% include "section-players.html" %}
+{% include "section-schedule.html", squad: squad | default: 'all' %}
+{% include "section-players.html", squad: squad %}
 {% include "section-sponsors01.html" %}

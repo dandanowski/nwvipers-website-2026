@@ -1,13 +1,13 @@
 {% liquid
 case page.url
 when "/squads/senior-kitted/"
-assign squad = "seniorKitted"
+assign squad = "senior-kitted"
 when "/squads/youth-kitted/"
-assign squad = "youthKitted"
+assign squad = "youth-kitted"
 when "/squads/womens-flag/"
-assign squad = "womensFlag"
+assign squad = "womens-flag"
 when "/squads/mixed-flag/"
-assign squad = "mixedFlag"
+assign squad = "mixed-flag"
 else
 assign squad = false
 endcase

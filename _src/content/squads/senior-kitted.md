@@ -2,11 +2,20 @@
 title: Senior Kitted
 layout: page
 permalink: /squads/senior-kitted/
+squad: "senior-kitted"
 bodyClassName: squads
 subtitle: Full contact American football for all adults aged 18+
 ---
 
-# Origin
+# Content
+* Context
+* Schedule
+* Roster
+* Coaches
+* News/Posts
+* History
+
+# History
 The Vipers were founded in 2015 and with the help of all the clubs members became an established team in the northwest. Early struggles came during their first season like any new club branching out into a new sport completely alien to them. After a disappointing first season it took the final game of the season for the Vipers to scrape their first win against the Galway Warriors.
 
 ## IAFL 2 Champions 2016

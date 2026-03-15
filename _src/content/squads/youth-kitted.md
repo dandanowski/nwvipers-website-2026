@@ -2,6 +2,7 @@
 title: Youth Kitted
 layout: page
 permalink: /squads/youth-kitted/
+squad: "youth-kitted"
 bodyClassName: squads
 subtitle: Full contact American football for ages 16 - 18
 ---
