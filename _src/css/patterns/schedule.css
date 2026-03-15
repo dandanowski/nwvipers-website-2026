@@ -22,9 +22,11 @@
     justify-content: center;
     height: 60px;
     text-align: left;
+    color: var(--core--color-ui-neutral-n090);
     background-color: oklch(from var(--core--color-ui-tertiary-t010) l c h / 0.25);
     border: 1px solid var(--core--color-ui-neutral-n020);
     border-radius: var(--core--shape-radius-md);
+    text-decoration: none;
     overflow: hidden;
     p {
         margin: 0;
@@ -61,6 +63,10 @@
 
 .schedule__grid__item--past {
     opacity: 0.5;
+    &:hover {
+        color: var(--core--color-ui-secondary-s099);
+        background-color: var(--core--color-ui-neutral-n030);
+    }
 }
 
 .schedule__grid__item__date {

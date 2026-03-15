@@ -14,13 +14,13 @@ assign today = "now" | date: "%Y-%m-%d"
             {% for item in collections.match %}
             {% assign match_date = item.data.date | date: "%Y-%m-%d" %}
             {% if squad == item.data.squad or squad == 'all' and match_date >= today %}
-            <div class="schedule__grid__item 
+            <a class="schedule__grid__item 
             {% if match_date >= today -%}
             schedule__grid__item--upcoming
             {% elsif match_date < today -%}
             schedule__grid__item--past
             {% endif -%}
-            ">
+            " {% if match_date < today -%} href="{{ item.url }}" {% endif -%}>
                 <header>
                     <p class="schedule__grid__item__date">{{ item.data.date | date: "%d %b" }}</p>
                     <p class="schedule__grid__item__time">{{ item.data.time }}</p>
@@ -40,13 +40,10 @@ assign today = "now" | date: "%Y-%m-%d"
                         }}</p>
                     {% endif %}
                 </section>
-            </div>
+            </a>
             {% endif %}
             {% endfor %}
         </nav>
-        <div class="schedule__footer">
-            <a href="/schedule/">View Full Schedule</a>
-        </div>
     </div>
 </section>
 {% endif %}
