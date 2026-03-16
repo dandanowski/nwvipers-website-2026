@@ -9,7 +9,7 @@
 
 .players__grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--core--spacing-md);
     list-style: none;
     margin: 0;
@@ -78,7 +78,7 @@
 
 @container players (width < 1120px) {
     .players__grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
