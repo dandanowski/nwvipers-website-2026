@@ -1,6 +1,4 @@
 .schedule {
-    container-name: schedule;
-    container-type: inline-size;
     padding: var(--core--spacing-4xl) 0;
     h2 {
         font: var(--sem--typo-headline-sm);
@@ -16,7 +14,7 @@
     padding: 0;
 }
 
-.schedule__grid__item {
+.schedule__item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,11 +55,11 @@
     }
 }
 
-.schedule__grid__item--upcoming {
+.schedule__item--upcoming {
     background-color: oklch(from var(--core--color-ui-tertiary-t010) l c h / 0.25);
 }
 
-.schedule__grid__item--past {
+.schedule__item--past {
     opacity: 0.5;
     &:hover {
         color: var(--core--color-ui-secondary-s099);
@@ -69,43 +67,61 @@
     }
 }
 
-.schedule__grid__item__date {
+.schedule__item__date {
     font: var(--sem--typo-title-md);
     font-weight: bold;
 }
 
-.schedule__grid__item__year {
+.schedule__item__year {
     display: none;
 }
 
-.schedule__grid__item__time {
+.schedule__item__time {
     font: var(--sem--typo-body-sm);
 }
 
-.schedule__grid__item__squad {
+.schedule__item__squad {
     flex: 1;
     font: var(--sem--typo-body-sm);
 }
 
-.schedule__grid__item__type {
+.schedule__item__type {
     flex: 1;
     font: var(--sem--typo-body-sm);
 }
 
-.schedule__grid__item__opponent {
+.schedule__item__opponent {
     flex: 4;
+    display: flex;
+    align-items: center;
+    gap: var(--core--spacing-xl);
     font: var(--sem--typo-title-md);
 }
 
-.schedule__grid__item__result {
+.schedule__item__opponent--logo {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.schedule__item__match-report {
     flex: 1;
+    font: var(--sem--typo-body-sm);
+}
+
+.schedule__item__result {
+    flex: 2;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: var(--core--spacing-xl);
     font: var(--sem--typo-body-lg);
 }
 
-.schedule__grid__item__location {
-    flex: 1;
+.schedule__item__location {
+    flex: 2;
     font: var(--sem--typo-body-sm);
 }
 
@@ -121,8 +137,20 @@
     }
 }
 
-@container schedule (width < 860px) {
-    .schedule__grid {
-        grid-template-columns: 1fr;
+@container contentWrap (width < 860px) {
+    .schedule__item {
+        header {
+            flex-direction: column;
+        gap: var(--core--spacing-sm);
+            height: auto;
+            width: 140px;
+        }
+    }
+    .schedule__item__opponent {
+        flex: 1;
+    }
+    .schedule__item__opponent--name,
+    .schedule__item__match-report {
+        display: none;
     }
 }

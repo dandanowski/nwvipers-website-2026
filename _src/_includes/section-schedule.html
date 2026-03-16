@@ -14,28 +14,37 @@ assign today = "now" | date: "%Y-%m-%d"
             {% for item in collections.match %}
             {% assign match_date = item.data.date | date: "%Y-%m-%d" %}
             {% if squad == item.data.squad or squad == 'all' and match_date >= today %}
-            <a class="schedule__grid__item 
+            <a class="schedule__item 
             {% if match_date >= today -%}
-            schedule__grid__item--upcoming
+            schedule__item--upcoming
             {% elsif match_date < today -%}
-            schedule__grid__item--past
+            schedule__item--past
             {% endif -%}
             " {% if match_date < today -%} href="{{ item.url }}" {% endif -%}>
                 <header>
-                    <p class="schedule__grid__item__date">{{ item.data.date | date: "%d %b" }}</p>
-                    <p class="schedule__grid__item__time">{{ item.data.time }}</p>
+                    <p class="schedule__item__date">{{ item.data.date | date: "%d %b" }}</p>
+                    <p class="schedule__item__time">{{ item.data.time }}</p>
                 </header>
                 <section>
                     {% if squad == 'all' %}
-                    <p class="schedule__grid__item__squad">{{ item.data.squad }}</p>
+                    <p class="schedule__item__squad">{{ item.data.squad }}</p>
                     {% endif %}
-                    <p class="schedule__grid__item__type">{{ item.data.type }}</p>
-                    <p class="schedule__grid__item__opponent">{{ afiClubs.profile[item.data.opponent].name }}</p>
+                    <p class="schedule__item__type">{{ item.data.type }}</p>
+                    <p class="schedule__item__opponent">
+                        <span class="schedule__item__opponent--logo"
+                            style="background-image: url('/assets/afi-logos/{{ item.data.opponent }}.png');">
+                        </span>
+                        <span class="schedule__item__opponent--name">
+                            {{ afiClubs.profile[item.data.opponent].name }}
+                        </span>
+                    </p>
                     {% if item.data.score %}
-                    <p class="schedule__grid__item__result"><span class="win-loss"> {{ item.data.result }}</span> {{
+                    <p class="schedule__item__result"><span class="schedule__item__match-report">Match report</span>
+                        <span class="win-loss"> {{
+                            item.data.result }}</span> {{
                         item.data.score }}</p>
                     {% else %}
-                    <p class="schedule__grid__item__location"><i class="fa-solid fa-location-dot"></i> {{
+                    <p class="schedule__item__location"><i class="fa-solid fa-location-dot"></i> {{
                         item.data.location
                         }}</p>
                     {% endif %}

@@ -63,3 +63,11 @@
         }
     }
 }
+
+@container contentWrap (max-width: 768px) {
+    .site--header__logo {
+        span {
+            display: none;
+        }
+    }
+}

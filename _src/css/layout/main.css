@@ -37,8 +37,15 @@ body {
 }
 
 .content--wrap {
+    container: contentWrap / inline-size;
     width: 100vw;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 var(--core--spacing-4xl);
+}
+
+@media (max-width: 768px) {
+    .content--wrap {
+        padding: 0 var(--core--spacing-xl);
+    }
 }

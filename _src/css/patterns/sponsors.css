@@ -54,3 +54,15 @@
 .sponsor--xfit {
     background-image: url("/assets/images/sponsor/logo_Xfit.png");
 }
+
+@container contentWrap (max-width: 940px) {
+    .sponsors__grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@container contentWrap (max-width: 620px) {
+    .sponsors__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}

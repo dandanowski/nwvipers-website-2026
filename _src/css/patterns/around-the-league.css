@@ -30,3 +30,19 @@
         }
     }
 }
+
+@container contentWrap (max-width: 768px) {
+    .around-the-league {
+        ul.squads {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@container contentWrap (max-width: 480px) {
+    .around-the-league {
+        ul.squads {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
