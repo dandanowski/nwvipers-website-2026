@@ -12,3 +12,15 @@
     border: 1px solid var(--sem--color-outline);
     border-radius: var(--core--shape-radius-2xl) 0 var(--core--shape-radius-2xl) 0;
 }
+
+@container contentWrap (max-width: 940px) {
+    .card--list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@container contentWrap (max-width: 720px) {
+    .card--list {
+        grid-template-columns: 1fr;
+    }
+}
