@@ -1,13 +1,14 @@
 <article class="card card--news">
-    <header>
-        <p>{{ article.data.title }}</p>
-        <h2>{{ article.data.subtitle }}</h2>
+    <header class="card__header">
+        <span>{{ article.data.squad | upcase }}</span>
+        <h2>{{ article.data.title }}</h2>
+        <p>{{ article.data.subtitle }}</p>
     </header>
-    <section>
-        <p>{{ article.data.date }}</p>
+    <section class="card__body">
+        <p>{{ article.data.date | date: '%d %B %Y' }}</p>
         <p>{{ article.data.page.excerpt | strip_html }}</p>
     </section>
-    <footer>
+    <footer class="card__footer">
         <a href="{{ article.url }}">Read More</a>
     </footer>
 </article>

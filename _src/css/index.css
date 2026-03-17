@@ -29,3 +29,6 @@
 @import "./layout/page.css" layer(site.layout);
 @import "./patterns/squads.css" layer(site.patterns);
 @import "./patterns/players.css" layer(site.patterns);
+@import "./layout/news-article.css" layer(site.layout);
+@import "./patterns/news.css" layer(site.patterns);
+@import "./patterns/cards.css" layer(site.patterns);

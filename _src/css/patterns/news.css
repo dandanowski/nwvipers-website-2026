@@ -1,0 +1,10 @@
+.card--news {
+    p {
+        margin: 0;
+        padding: 0;
+    }
+    .card__body {
+        font: var(--sem--typo-body-md);
+        color: var(--core--color-ui-neutral-n080);
+    }
+}

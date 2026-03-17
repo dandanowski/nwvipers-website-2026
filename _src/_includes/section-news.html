@@ -1,13 +1,15 @@
 {%- if collections.news.size > 0 -%}
-  <ul class="card--list">
-    {%- liquid
-      assign now = 'now' | date: '%Y-%m-%d'
-      for article in collections.news reversed
-        assign articleDate = article.data.date | date: '%Y-%m-%d'
-        if articleDate <= now
-          render 'news-card.html', article: article
-        endif
-      endfor
-    -%}
-  </ul>
+  <section class="content--wrap">
+    <ul class="card--list">
+      {%- liquid
+        assign now = 'now' | date: '%Y-%m-%d'
+        for article in collections.news reversed
+          assign articleDate = article.data.date | date: '%Y-%m-%d'
+          if articleDate <= now
+            render 'news-card.html', article: article
+          endif
+        endfor
+      -%}
+    </ul>
+  </section>
 {% endif %}

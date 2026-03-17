@@ -1,0 +1,14 @@
+.card--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0;
+    padding: var(--core--spacing-4xl) 0;
+}
+
+.card {
+    padding: var(--core--spacing-2xl);
+    background-color: oklch(from var(--core--color-ui-tertiary-t010) l c h / 0.25);
+    border: 1px solid var(--sem--color-outline);
+    border-radius: var(--core--shape-radius-2xl) 0 var(--core--shape-radius-2xl) 0;
+}
