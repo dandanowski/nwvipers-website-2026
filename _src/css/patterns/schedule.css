@@ -70,6 +70,7 @@
 .schedule__item__date {
     font: var(--sem--typo-title-md);
     font-weight: bold;
+    white-space: nowrap;
 }
 
 .schedule__item__year {
