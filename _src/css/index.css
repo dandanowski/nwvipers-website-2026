@@ -4,9 +4,9 @@
     theme.core,
     theme.semantic,
     theme.component,
+    site.layout,
     site.components,
-    site.patterns,
-    site.layout;
+    site.patterns;
 
 /* @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Space+Grotesk:wght@300..700&display=swap');
