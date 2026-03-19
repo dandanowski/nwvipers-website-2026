@@ -48,3 +48,24 @@
         line-height: 0.8em;
     }
 }
+
+@container contentWrap (max-width: 600px) {
+    .hero {
+        h2 {
+            font: var(--sem--typo-headline-md);
+            text-shadow:
+                2px 2px 0px var(--core--color-ui-neutral-n000),
+                -2px -2px 0px var(--core--color-ui-neutral-n000),
+                2px -2px 0px var(--core--color-ui-neutral-n000),
+                -2px 2px 0px var(--core--color-ui-neutral-n000);
+        }
+        p {
+            font: var(--sem--typo-body-md);
+            text-shadow:
+                1px 1px 1px var(--core--color-ui-neutral-n000),
+                -1px -1px 1px var(--core--color-ui-neutral-n000),
+                1px -1px 1px var(--core--color-ui-neutral-n000),
+                -1px 1px 1px var(--core--color-ui-neutral-n000);
+        }
+    }
+}
