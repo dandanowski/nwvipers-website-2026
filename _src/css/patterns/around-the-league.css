@@ -34,7 +34,10 @@
 @container contentWrap (max-width: 768px) {
     .around-the-league {
         ul.squads {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            li a {
+                height: 60px;
+            }
         }
     }
 }
@@ -42,7 +45,10 @@
 @container contentWrap (max-width: 480px) {
     .around-the-league {
         ul.squads {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            li a {
+                height: 48px;
+            }
         }
     }
 }
