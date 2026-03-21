@@ -14,7 +14,7 @@
 #lightbox-img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 90vh;
   border-radius: 4px;
 }
 

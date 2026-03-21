@@ -26,27 +26,38 @@ export default function (eleventyConfig) {
     });
 
     eleventyConfig.addAsyncShortcode("gallery", async function (srcDir) {
-        // 1. Read the directory
-        // Note: process.cwd() ensures we start from the project root
         const fullPath = path.join(process.cwd(), srcDir);
+        console.log('>>>>>> fullPath: ', fullPath)
+
+        // 1. Check if directory exists
+        if (!fs.existsSync(fullPath)) {
+            console.warn(`[Gallery Shortcode] Directory not found: ${fullPath}`);
+            return ``;
+        }
+
+        // 2. Filter for images
         const files = fs.readdirSync(fullPath).filter(file =>
             /\.(jpe?g|png|webp|avif)$/i.test(file)
         );
+
+        // 3. Handle empty directories
+        if (files.length === 0) {
+            console.warn(`[Gallery Shortcode] No images found in: ${fullPath}`);
+            return ``;
+        }
 
         let html = '<div class="gallery__grid">';
 
         for (const file of files) {
             const filePath = path.join(fullPath, file);
 
-            // 2. Process images
             let metadata = await Image(filePath, {
-                widths: [300],
-                formats: ["png"], // Added WebP for better performance
-                outputDir: "./_site/assets/images/match/",
-                urlPath: "/assets/images/match/"
+                widths: [600, 1200],
+                formats: ["webp", "jpeg"],
+                outputDir: "./_site/assets/images/",
+                urlPath: "/assets/images/"
             });
 
-            // Use the smaller WebP for the thumb, large JPEG for the lightbox
             const thumb = metadata.webp[0];
             const large = metadata.jpeg[metadata.jpeg.length - 1];
 
@@ -56,7 +67,8 @@ export default function (eleventyConfig) {
                alt="Photo from ${srcDir}" 
                width="${thumb.width}" 
                height="${thumb.height}" 
-               loading="lazy" />
+               style="object-fit: cover;"
+               loading="lazy">
         </a>`;
         }
 

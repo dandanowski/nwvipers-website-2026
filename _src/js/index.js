@@ -1,11 +1,8 @@
 const lightbox = document.querySelector('#lightbox');
 const lightboxImg = document.querySelector('#lightbox-img');
 
-console.log('loaded');
-
 document.querySelectorAll('.open-lightbox').forEach(link => {
     link.addEventListener('click', () => {
-        console.log('Hey.');
         // 1. Set the source to the high-res image
         lightboxImg.src = link.dataset.full;
         lightboxImg.alt = link.alt;
