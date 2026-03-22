@@ -32,7 +32,8 @@ export default function (eleventyConfig) {
 
         // 1. Check if directory exists
         if (!fs.existsSync(fullPath)) {
-            console.warn(`[Gallery Shortcode] Directory not found: ${fullPath}`);
+            // TODO: Used for debugging - remove before deployment
+            // console.warn(`[Gallery Shortcode] Directory not found: ${fullPath}`);
             return ``;
         }
 
@@ -43,7 +44,8 @@ export default function (eleventyConfig) {
 
         // 3. Handle empty directories
         if (files.length === 0) {
-            console.warn(`[Gallery Shortcode] No images found in: ${fullPath}`);
+            // TODO: Used for debugging - remove before deployment
+            // console.warn(`[Gallery Shortcode] No images found in: ${fullPath}`);
             return ``;
         }
 
