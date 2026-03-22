@@ -5,7 +5,7 @@
         assign now = 'now' | date: '%Y-%m-%d'
         for article in collections.news reversed
           assign articleDate = article.data.date | date: '%Y-%m-%d'
-          if articleDate <= now
+          if articleDate < now
             render 'news-card.html', article: article
           endif
         endfor
