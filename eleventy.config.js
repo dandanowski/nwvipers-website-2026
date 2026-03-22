@@ -26,8 +26,9 @@ export default function (eleventyConfig) {
     });
 
     eleventyConfig.addAsyncShortcode("gallery", async function (srcDir) {
-        const fullPath = path.join(process.cwd(), srcDir);
-        console.log('>>>>>> fullPath: ', fullPath)
+        const tempDir = srcDir.split("/").filter((item) => item !== "content").join("/");
+        const galleryDir = "/assets/images" + tempDir;
+        const fullPath = path.join(process.cwd(), "/_src" + galleryDir);
 
         // 1. Check if directory exists
         if (!fs.existsSync(fullPath)) {
@@ -54,8 +55,8 @@ export default function (eleventyConfig) {
             let metadata = await Image(filePath, {
                 widths: [600, 1200],
                 formats: ["webp", "jpeg"],
-                outputDir: "./_site/assets/images/",
-                urlPath: "/assets/images/"
+                outputDir: "./_site/" + galleryDir,
+                urlPath: galleryDir
             });
 
             const thumb = metadata.webp[0];
