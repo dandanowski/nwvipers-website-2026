@@ -1,13 +1,13 @@
 {
     "all": [
         "northwest-vipers",
+        "antrim-stags",
         "belfast-knights",
         "belfast-trojans",
         "causeway-giants",
         "cill-dara-crusaders",
         "cork-admirals",
         "cork-city-outlaws",
-        "county-antrim-stags",
         "craigavon-cowboys",
         "dublin-bay-raptors",
         "dublin-city-quetzals",
@@ -25,7 +25,8 @@
         "ulster-university-elks",
         "university-of-limerick-vikings",
         "west-dublin-rhinos",
-        "westmeath-minotaurs"
+        "westmeath-minotaurs",
+        "wexford-eagles"
     ],
     "profile": {
         "northwest-vipers": {
@@ -46,32 +47,32 @@
         "causeway-giants": {
             "name": "Causeway Giants",
             "location": "County Antrim",
-            "url": "https://www.causewaygiants.com/"
+            "url": "https://www.thecausewaygiants.co.uk/"
         },
         "cill-dara-crusaders": {
             "name": "Cill Dara Crusaders",
             "location": "Kildare",
-            "url": "https://www.cilldaracrusaders.com/"
+            "url": ""
         },
         "cork-admirals": {
             "name": "Cork Admirals",
             "location": "Cork",
-            "url": "https://www.corkadmirals.com/"
+            "url": "https://www.corkadmirals.ie/"
         },
         "cork-city-outlaws": {
             "name": "Cork City Outlaws",
             "location": "Cork",
-            "url": "https://www.corkcityoutlaws.com/"
+            "url": ""
         },
         "county-antrim-stags": {
             "name": "County Antrim Stags",
             "location": "County Antrim",
-            "url": ""
+            "url": "https://antrimstags.co.uk/"
         },
         "craigavon-cowboys": {
             "name": "Craigavon Cowboys",
             "location": "Craigavon, County Armagh",
-            "url": "https://www.craigavoncowboys.com/"
+            "url": "https://www.craigavoncowboys.co.uk/"
         },
         "dublin-bay-raptors": {
             "name": "Dublin Bay Raptors",
@@ -91,7 +92,7 @@
         "dublin-rebels": {
             "name": "Dublin Rebels",
             "location": "Dublin",
-            "url": ""
+            "url": "https://www.dublinrebels.com/"
         },
         "dublin-red-bows": {
             "name": "Dublin Red Bows",
@@ -121,7 +122,7 @@
         "louth-mavericks": {
             "name": "Louth Mavericks",
             "location": "",
-            "url": ""
+            "url": "https://louthmavericks.com/"
         },
         "maynooth-university-hurricanes": {
             "name": "Maynooth University Hurricanes",
@@ -136,7 +137,7 @@
         "south-dublin-panthers": {
             "name": "South Dublin Panthers",
             "location": "",
-            "url": ""
+            "url": "https://southdublinpanthers.clubforce.com/"
         },
         "ulster-university-elks": {
             "name": "Ulster University Elks",
@@ -156,12 +157,12 @@
         "westmeath-minotaurs": {
             "name": "Westmeath Minotaurs",
             "location": "",
-            "url": ""
+            "url": "http://westmeathminotaurs.com/"
         },
         "wexford-eagles": {
             "name": "Wexford Eagles",
             "location": "Wexford",
-            "url": ""
+            "url": "http://www.wexfordeagles.ie/"
         }
     }
 }
