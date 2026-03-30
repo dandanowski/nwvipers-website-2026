@@ -29,7 +29,11 @@ assign today = "now" | date: "%Y-%m-%d"
                     {% if squad == 'all' %}
                     <p class="schedule__item__squad">{{ item.data.squad }}</p>
                     {% endif %}
-                    <p class="schedule__item__type">{{ item.data.type }}</p>
+                    {% if item.data.type == 'league' %}
+                    {% include 'icon.html', icon: 'league' %}
+                    {% elsif item.data.type == 'friendly' %}
+                    {% include 'icon.html', icon: 'friendly' %}
+                    {% endif %}
                     <p class="schedule__item__opponent">
                         <span class="schedule__item__opponent--logo"
                             style="background-image: url('/assets/afi-logos/{{ item.data.opponent }}.png');">
@@ -42,7 +46,8 @@ assign today = "now" | date: "%Y-%m-%d"
                     <p class="schedule__item__result"><span class="schedule__item__match-report">Match report</span>
                         <span class="win-loss"> {{
                             item.data.result }}</span> {{
-                        item.data.score }}</p>
+                        item.data.score }}
+                    </p>
                     {% else %}
                     <p class="schedule__item__location"><i class="fa-solid fa-location-dot"></i> {{
                         item.data.location

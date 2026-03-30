@@ -1,0 +1,8 @@
+.icon {
+    display: grid;
+    place-items: center;
+
+    path {
+        fill: var(--core--color-ui-neutral-n040);
+    }
+}
