@@ -27,13 +27,25 @@ assign today = "now" | date: "%Y-%m-%d"
                 </header>
                 <section>
                     {% if squad == 'all' %}
-                    <p class="schedule__item__squad">{{ item.data.squad }}</p>
+                    <p class="schedule__item__squad">
+                        {% if item.data.squad == 'senior-kitted' %}
+                        {% include 'icon.html', icon: 'senior-kitted' %}
+                        {% elsif item.data.squad == 'womens-flag' %}
+                        {% include 'icon.html', icon: 'womens-flag' %}
+                        {% elsif item.data.squad == 'mixed-flag' %}
+                        {% include 'icon.html', icon: 'mixed-flag' %}
+                        {% elsif item.data.squad == 'youth-kitted' %}
+                        {% include 'icon.html', icon: 'youth-kitted' %}
+                        {% endif %}
+                    </p>
                     {% endif %}
-                    {% if item.data.type == 'league' %}
-                    {% include 'icon.html', icon: 'league' %}
-                    {% elsif item.data.type == 'friendly' %}
-                    {% include 'icon.html', icon: 'friendly' %}
-                    {% endif %}
+                    <p class="schedule__item__type">
+                        {% if item.data.type == 'league' %}
+                        {% include 'icon.html', icon: 'league' %}
+                        {% elsif item.data.type == 'friendly' %}
+                        {% include 'icon.html', icon: 'friendly' %}
+                        {% endif %}
+                    </p>
                     <p class="schedule__item__opponent">
                         <span class="schedule__item__opponent--logo"
                             style="background-image: url('/assets/afi-logos/{{ item.data.opponent }}.png');">

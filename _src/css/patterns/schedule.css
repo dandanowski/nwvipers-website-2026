@@ -92,7 +92,7 @@
 }
 
 .schedule__item__opponent {
-    flex: 4;
+    flex: 12;
     display: flex;
     align-items: center;
     gap: var(--core--spacing-xl);
@@ -107,22 +107,22 @@
     background-position: center;
 }
 
-.schedule__item__match-report {
-    flex: 1;
-    font: var(--sem--typo-body-sm);
-}
-
 .schedule__item__result {
-    flex: 2;
+    flex: 6;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: var(--core--spacing-xl);
     font: var(--sem--typo-body-lg);
 }
 
+.schedule__item__match-report {
+    flex: 4;
+    font: var(--sem--typo-body-sm);
+}
+
 .schedule__item__location {
-    flex: 2;
+    flex: 4;
     font: var(--sem--typo-body-sm);
 }
 
