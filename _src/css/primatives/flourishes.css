@@ -1,7 +1,5 @@
 .flourish--link {
-    background-color: oklch(from var(--core--color-ui-tertiary-t010) l c h / 0.25);
     border: 1px solid var(--core--color-ui-neutral-n020);
-    /* border-radius: var(--core--shape-radius-2xl) 0 var(--core--shape-radius-2xl) 0; */
     transition: all 0.2s ease-out;
     cursor: pointer;
 
