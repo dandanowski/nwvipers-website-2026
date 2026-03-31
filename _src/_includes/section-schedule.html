@@ -18,7 +18,7 @@ assign today = "now" | date: "%Y-%m-%d"
             {% if match_date >= today -%}
             schedule__item--upcoming
             {% elsif match_date < today -%}
-            schedule__item--past
+            schedule__item--past flourish--link
             {% endif -%}
             " {% if match_date < today -%} href="{{ item.url }}" {% endif -%}>
                 <header>

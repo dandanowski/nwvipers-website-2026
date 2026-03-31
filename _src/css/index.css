@@ -4,6 +4,7 @@
     theme.core,
     theme.semantic,
     theme.component,
+    theme.flourish,
     site.layout,
     site.components,
     site.patterns;
@@ -27,6 +28,7 @@
 @import "./components/button.css" layer(site.components);
 @import "./components/icons.css" layer(site.components);
 @import "./components/lightbox.css" layer(site.components);
+@import "./primatives/flourishes.css" layer(theme.flourish);
 /* Patterns */
 @import "./patterns/hero.css" layer(site.patterns);
 @import "./patterns/sponsors.css" layer(site.patterns);
