@@ -6,7 +6,5 @@ bodyClassName: bodyClassName
 <section class="page-content content--wrap">
     {{ content }}
 </section>
-{% include "section_gallery.html" %}
+{% section_gallery page.url %}
 {% include "section-schedule.html", squad: squad | default: 'all' %}
-{% include "section-players.html", squad: squad %}
-{% include "section-sponsors01.html" %}

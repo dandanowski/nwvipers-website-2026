@@ -25,7 +25,7 @@ export default function (eleventyConfig) {
         return value.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
     });
 
-    eleventyConfig.addAsyncShortcode("gallery", async function (srcDir) {
+    eleventyConfig.addAsyncShortcode("section_gallery", async function (srcDir) {
         const tempDir = srcDir.split("/").filter((item) => item !== "content").join("/");
         const galleryDir = "/assets/images" + tempDir;
         const fullPath = path.join(process.cwd(), "/_src" + galleryDir);
@@ -49,7 +49,7 @@ export default function (eleventyConfig) {
             return ``;
         }
 
-        let html = '<div class="gallery__grid">';
+        let html = '<section class="gallery"><div class="content--wrap"><div class="gallery__grid">';
 
         for (const file of files) {
             const filePath = path.join(fullPath, file);
@@ -65,7 +65,7 @@ export default function (eleventyConfig) {
             const large = metadata.jpeg[metadata.jpeg.length - 1];
 
             html += `
-        <a class="gallery__item open-lightbox" data-full="${large.url}">
+        <a class="flourish--link gallery__item open-lightbox" data-full="${large.url}">
           <img src="${thumb.url}" 
                alt="Photo from ${srcDir}" 
                width="${thumb.width}" 
@@ -75,7 +75,7 @@ export default function (eleventyConfig) {
         </a>`;
         }
 
-        html += '</div>';
+        html += '</div></div></section>';
         return html;
     });
 };

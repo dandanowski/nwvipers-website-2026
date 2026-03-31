@@ -64,6 +64,7 @@
     &:hover {
         color: var(--core--color-ui-secondary-s099);
         background-color: var(--core--color-ui-neutral-n030);
+        opacity: 1;
     }
 }
 

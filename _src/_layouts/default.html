@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{% render "head.html", site: site, page: title %}
+{% render "head.html", site: site, title: title %}
 
 <body class="{{ bodyClassName }}">
     <div class="site--wrap">
@@ -9,6 +9,7 @@
 
         <main class="site--content" aria-label="Content">
             {{ content }}
+            {% include "section-sponsors.html" %}
             {% include "section-league.html" %}
         </main>
         {% render "site-footer.html", site: site %}

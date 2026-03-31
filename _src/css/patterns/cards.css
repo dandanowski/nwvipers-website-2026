@@ -24,3 +24,8 @@
         grid-template-columns: 1fr;
     }
 }
+
+a.card {
+    text-decoration: none;
+    color: inherit;
+}

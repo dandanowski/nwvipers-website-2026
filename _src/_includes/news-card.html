@@ -1,4 +1,4 @@
-<article class="card card--news">
+<a class="card card--news flourish--link" href="{{ article.url }}">
     <header class="card__header">
         <span>{{ article.data.squad | upcase }}</span>
         <h2>{{ article.data.title }}</h2>
@@ -9,6 +9,6 @@
         <p>{{ article.data.page.excerpt | strip_html }}</p>
     </section>
     <footer class="card__footer">
-        <a href="{{ article.url }}">Read More</a>
+        <span>Read More</span>
     </footer>
-</article>
+</a>
