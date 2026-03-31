@@ -25,6 +25,14 @@ export default function (eleventyConfig) {
         return value.replace(/\w\S*/g, function (txt) { return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase(); });
     });
 
+    eleventyConfig.addFilter("imageList", function (dirPath) {
+        const fullPath = path.join(process.cwd(), "_src", dirPath);
+        if (!fs.existsSync(fullPath)) return "[]";
+        const files = fs.readdirSync(fullPath).filter(file => /\.(jpe?g|png|webp|avif)$/i.test(file));
+        const urls = files.map(file => path.join(dirPath, file).replace(/\\/g, '/'));
+        return JSON.stringify(urls);
+    });
+
     eleventyConfig.addAsyncShortcode("section_gallery", async function (srcDir) {
         const tempDir = srcDir.split("/").filter((item) => item !== "content").join("/");
         const galleryDir = "/assets/images" + tempDir;

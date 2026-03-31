@@ -1,6 +1,15 @@
-<section class="hero {% if page.url == '/' %}hero--section{% else %}hero--page{% endif %}">
+<section id="hero-section" class="hero {% if page.url == '/' %}hero--section{% else %}hero--page{% endif %}">
     <div class="hero__content content--wrap">
         <h2>{{ title | default: "Northwest Vipers" }}</h2>
         <p>{{ subtitle | default: "" }}</p>
     </div>
 </section>
+<script>
+    (function() {
+        var images = {{ '/assets/images/hero' | imageList }};
+        if (images && images.length > 0) {
+            var randomImg = images[Math.floor(Math.random() * images.length)];
+            document.getElementById('hero-section').style.backgroundImage = 'url("' + randomImg + '")';
+        }
+    })();
+</script>
