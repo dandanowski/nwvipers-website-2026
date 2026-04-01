@@ -1,0 +1,28 @@
+.filter-group {
+    display: inline-flex;
+    gap: var(--core--spacing-md);
+    padding: var(--core--spacing-xs);
+    background: var(--core--color-ui-neutral-n030);
+    /* border: 1px solid var(--core--color-ui-neutral-n040); */
+    border-radius: var(--core--shape-radius-2xl);
+    overflow: hidden;
+
+    .filter-btn {
+        border: 0;
+        background: var(--core--color-ui-neutral-n030);
+        padding: var(--core--spacing-md) var(--core--spacing-lg);
+        font: var(--sem--typo-label-sm);
+        text-transform: uppercase;
+        color: var(--core--color-ui-neutral-n080);
+        border-radius: var(--core--shape-radius-2xl);
+        cursor: pointer;
+        &:hover {
+            color: var(--core--color-ui-secondary-s099);
+        background: var(--core--color-ui-neutral-n040);
+        }
+        &.active {
+            color: var(--core--color-ui-secondary-s099);
+        background: var(--core--color-ui-neutral-n040);
+        }
+    }
+}

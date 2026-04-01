@@ -5,6 +5,7 @@ title: Northwest Vipers
 subtitle: American Football Club in the Northwest of Ireland
 layout: home
 bodyClassName: home
+permalink: '/'
 ---
 
 Home page

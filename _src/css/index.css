@@ -26,7 +26,9 @@
 @import "./layout/news-article.css" layer(site.layout);
 /* Components */
 @import "./components/button.css" layer(site.components);
+@import "./components/cards.css" layer(site.components);
 @import "./components/icons.css" layer(site.components);
+@import "./components/filters.css" layer(site.components);
 @import "./components/lightbox.css" layer(site.components);
 @import "./primatives/flourishes.css" layer(theme.flourish);
 /* Patterns */
@@ -37,5 +39,4 @@
 @import "./patterns/squads.css" layer(site.patterns);
 @import "./patterns/players.css" layer(site.patterns);
 @import "./patterns/news.css" layer(site.patterns);
-@import "./patterns/cards.css" layer(site.patterns);
 @import "./patterns/gallery.css" layer(site.patterns);

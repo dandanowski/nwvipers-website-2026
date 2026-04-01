@@ -1,15 +1,50 @@
 {%- if collections.news.size > 0 -%}
-  <section class="content--wrap">
-    <ul class="card--list">
-      {%- liquid
-        assign now = 'now' | date: '%Y-%m-%d'
-        for article in collections.news reversed
-          assign articleDate = article.data.date | date: '%Y-%m-%d'
-          if articleDate < now
-            render 'news-card.html', article: article
-          endif
-        endfor
-      -%}
-    </ul>
+  <section class="news">
+    <div class="news__content content--wrap">
+      <h2>
+        <span>Latest News</span>
+        <nav class="news-filters filter-group">
+          <button class="filter-btn active" data-squad="all">All News</button>
+          <button class="filter-btn" data-squad="senior-kitted">Senior Kitted</button>
+          <button class="filter-btn" data-squad="womens-flag">Women's Flag</button>
+          <button class="filter-btn" data-squad="mixed-flag">Mixed Flag</button>
+          <button class="filter-btn" data-squad="youth-kitted">Youth Kitted</button>
+        </nav>
+      </h2>
+      <ul class="card--list">
+        {%- liquid
+          assign now = 'now' | date: '%Y-%m-%d'
+          for article in collections.news reversed
+            assign articleDate = article.data.date | date: '%Y-%m-%d'
+            if articleDate < now
+              render 'news-card.html', article: article
+            endif
+          endfor
+        -%}
+      </ul>
+    </div>
   </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const filterBtns = document.querySelectorAll('.news-filters .filter-btn');
+      const newsCards = document.querySelectorAll('.card--news');
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach((b) => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filterValue = btn.getAttribute('data-squad');
+
+          newsCards.forEach((card) => {
+            if (filterValue === 'all' || card.getAttribute('data-squad') === filterValue) {
+              card.style.display = '';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 {% endif %}

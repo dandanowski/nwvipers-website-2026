@@ -6,16 +6,9 @@ bodyClassName: home
 <section class="content--wrap">
     <section class="site--main__hero">
         <div class="site--main__hero__content">
-            <h1 class="site--main__hero__content__title">{{ title }}</h1>
-            <p class="site--main__hero__content__subtitle">{{ subtitle }}</p>
-            <p>Some long content of stuff, hope it fits and the AI can see this an add loads more text.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum. Cheers.</p>
             {{ content }}
         </div>
     </section>
 </section>
+{% include "section-news.html" %}
 {% include "section-schedule.html", squad: 'all' %}

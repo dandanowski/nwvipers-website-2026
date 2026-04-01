@@ -1,14 +1,13 @@
-<a class="card card--news flourish--link" href="{{ article.url }}">
-    <header class="card__header">
-        <span>{{ article.data.squad | upcase }}</span>
-        <h2>{{ article.data.title }}</h2>
-        <p>{{ article.data.subtitle }}</p>
-    </header>
+<a class="card card--news flourish--link" href="{{ article.url }}" data-squad="{{ article.data.squad }}">
+    <section class="card__header" style="background-image: url('/assets/images/news/{{ article.data.image }}');">
+    </section>
     <section class="card__body">
+        <header>
+            <span class="squad">{% include 'icon.html', icon: article.data.squad %}</span>
+            <h2> {{ article.data.title }}</h2>
+            <p>{{ article.data.subtitle }}</p>
+        </header>
         <p>{{ article.data.date | date: '%d %B %Y' }}</p>
         <p>{{ article.data.page.excerpt | strip_html }}</p>
     </section>
-    <footer class="card__footer">
-        <span>Read More</span>
-    </footer>
 </a>
