@@ -35,7 +35,6 @@ section.squads {
 .squads__grid__item__header {
     height: 100%;
     width: 100%;
-    background-image: url("/assets/images/hero/sr-kitted-202505.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
