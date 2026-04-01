@@ -85,6 +85,12 @@
 .schedule__item__squad {
     flex: 1;
     font: var(--sem--typo-body-sm);
+    cursor: pointer;
+    &:hover{
+        path {
+            fill: var(--core--color-ui-secondary-s099);
+        }
+    }
 }
 
 .schedule__item__type {

@@ -2,7 +2,7 @@
     display: grid;
     place-items: center;
 
-    path {
+    path, circle {
         fill: var(--core--color-ui-neutral-n040);
     }
 }

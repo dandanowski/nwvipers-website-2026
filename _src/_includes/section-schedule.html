@@ -29,13 +29,21 @@ assign today = "now" | date: "%Y-%m-%d"
                     {% if squad == 'all' %}
                     <p class="schedule__item__squad">
                         {% if item.data.squad == 'senior-kitted' %}
-                        {% include 'icon.html', icon: 'senior-kitted' %}
+                        <span onclick="event.preventDefault(); window.location.href='/squads/{{ item.data.squad }}'">
+                            {% include 'icon.html', icon: 'senior-kitted' %}
+                        </span>
                         {% elsif item.data.squad == 'womens-flag' %}
-                        {% include 'icon.html', icon: 'womens-flag' %}
+                        <span onclick="event.preventDefault(); window.location.href='/squads/{{ item.data.squad }}'">
+                            {% include 'icon.html', icon: 'womens-flag' %}
+                        </span>
                         {% elsif item.data.squad == 'mixed-flag' %}
-                        {% include 'icon.html', icon: 'mixed-flag' %}
+                        <span onclick="event.preventDefault(); window.location.href='/squads/{{ item.data.squad }}'">
+                            {% include 'icon.html', icon: 'mixed-flag' %}
+                        </span>
                         {% elsif item.data.squad == 'youth-kitted' %}
-                        {% include 'icon.html', icon: 'youth-kitted' %}
+                        <span onclick="event.preventDefault(); window.location.href='/squads/{{ item.data.squad }}'">
+                            {% include 'icon.html', icon: 'youth-kitted' %}
+                        </span>
                         {% endif %}
                     </p>
                     {% endif %}
