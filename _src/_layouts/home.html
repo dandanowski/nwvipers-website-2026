@@ -2,13 +2,12 @@
 layout: default
 bodyClassName: home
 ---
-{% include "section-hero.html", title: "Northwest Vipers", subtitle: "American Football Club in the Northwest of
-Ireland" %}
+{% include "section-hero.html", title: title, subtitle: subtitle %}
 <section class="content--wrap">
     <section class="site--main__hero">
         <div class="site--main__hero__content">
-            <h1 class="site--main__hero__content__title">Northwest Vipers</h1>
-            <p class="site--main__hero__content__subtitle">Northwest Vipers</p>
+            <h1 class="site--main__hero__content__title">{{ title }}</h1>
+            <p class="site--main__hero__content__subtitle">{{ subtitle }}</p>
             <p>Some long content of stuff, hope it fits and the AI can see this an add loads more text.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
