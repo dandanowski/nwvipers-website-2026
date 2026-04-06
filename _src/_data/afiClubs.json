@@ -23,6 +23,7 @@
         "north-down-dragons",
         "south-dublin-panthers",
         "ulster-university-elks",
+        "university-college-dublin",
         "university-of-limerick-vikings",
         "west-dublin-rhinos",
         "westmeath-minotaurs",
@@ -146,6 +147,11 @@
         },
         "university-of-limerick-vikings": {
             "name": "University of Limerick Vikings",
+            "location": "",
+            "url": ""
+        },
+        "university-college-dublin": {
+            "name": "University College Dublin",
             "location": "",
             "url": ""
         },
