@@ -40,3 +40,4 @@
 @import "./patterns/players.css" layer(site.patterns);
 @import "./patterns/news.css" layer(site.patterns);
 @import "./patterns/gallery.css" layer(site.patterns);
+@import "./patterns/faqs.css" layer(site.patterns);

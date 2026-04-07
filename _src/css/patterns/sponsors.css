@@ -23,23 +23,94 @@
     width: 100%;
     min-width: 120px;
     max-width: 400px;
-    background-color: var(--core--color-ui-neutral-n050);
+    background-color: var(--core--color-ui-neutral-n020);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: var(--core--shape-radius-xl) 0 var(--core--shape-radius-xl) 0;
 }
 
+.sponsor--kernans {
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-main {
+            fill: #E1251C; /* #E1251C */
+        }
+    }
+}
+
+.sponsor--the-old-docks {
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-main {
+            fill: #FEFEFE; /* #FEFEFE */
+        }
+    }
+}
+
+.sponsor--georges-bar {
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-main {
+            fill: #FEFEFE; /* #FEFEFE */
+        }
+    }
+}
+
+.sponsor--campbells-bar {
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-main {
+            fill: #FEFEFE; /* #FEFEFE */
+        }
+    }
+}
+
+.sponsor--the-branch-bar {
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-accent {
+            fill: #DC8D48; /* #DC8D48 */
+        }
+        .color-main {
+            fill: #FEFEFE; /* #FEFEFE */
+        }
+    }
+}
+
 .sponsor--bread-and-butter {
-    background-image: url("/assets/images/sponsor/logo_Bread-n-Butter.jpg");
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-accent {
+            fill: #F8B202; /* #F8B202 */
+        }
+        .color-main {
+            fill: #FEFEFE; /* #0C0C0C */
+        }
+    }
 }
 
 .sponsor--paolos-pizzas {
-    background-image: url("/assets/images/sponsor/logo_PaolosPizzas.png");
+    svg {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .sponsor--pickled-duck {
-    background-image: url("/assets/images/sponsor/logo_Pickled-Duck.png");
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-main {
+            fill: #FEFEFE; /* #313231 */
+        }
+    }
 }
 
 .sponsor--wee-derry-shot {
@@ -47,7 +118,16 @@
 }
 
 .sponsor--xfit {
-    background-image: url("/assets/images/sponsor/logo_Xfit.png");
+    svg {
+        height: 100%;
+        width: 100%;
+        .color-accent {
+            fill: #B50105; /* #B50105 */
+        }
+        .color-main {
+            fill: #FEFEFE; /* #000 */
+        }
+    }
 }
 
 @container contentWrap (max-width: 940px) {
