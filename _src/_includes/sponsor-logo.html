@@ -1,7 +1,7 @@
 {%- liquid
-  if sponsor
-    include 'sponsor-logos/logo_{{ sponsor }}.svg'
-  else
-    include 'sponsor-logos/logo_placeholder.svg'
-  endif
+if sponsor
+include './sponsor-logos/logo_{{ sponsor }}.svg'
+else
+include './sponsor-logos/logo_placeholder.svg'
+endif
 -%}
