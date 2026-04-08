@@ -3,7 +3,7 @@ name: Deploy Eleventy Site
 on:
   push:
     branches:
-      - main  # Runs every time you push to main
+      - main  # Runs every time you push to main, like every time...
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # This clears the deprecation warning
 
