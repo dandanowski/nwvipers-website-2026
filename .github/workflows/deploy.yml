@@ -36,3 +36,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./_site/  # The subdirectory you want to move
           server-dir: ./domains/danow.ski/public_html/vipers-2026/
+          protocol: ftp 
+          port: 21
+          log-level: verbose
