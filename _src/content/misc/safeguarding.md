@@ -30,10 +30,10 @@ We have a comprehensive safeguarding policy that outlines our commitment to prot
 
 If you have any concerns about the safety or well-being of any member of our club, please follow the procedures outlined in our safeguarding policy. You can also contact the following organisations for support:
 
-- **NSPCC:** 0808 800 5000
-- **Childline:** 0800 1111
-- **NSPCC Northern Ireland:** 0808 800 5000
-- **NSPCC Republic of Ireland:** 0818 50 40 50
+- **NSPCC:** [0808 800 5000](tel:08088005000)
+- **Childline:** [0800 1111](tel:08001111)
+- **NSPCC Northern Ireland:** [0808 800 5000](tel:08088005000)
+- **NSPCC Republic of Ireland:** [0818 50 40 50](tel:0818504050)
 
 ## Training and Development
 
@@ -49,7 +49,3 @@ Here are some useful resources for safeguarding in sport:
 - **[NSPCC Republic of Ireland](https://www.nspcc.org.uk/what-we-do/about-us/our-services/republic-of-ireland/)**
 - **[Sport Northern Ireland](https://www.sportni.net/)**
 - **[Sport Ireland](https://www.sportireland.ie/)**
-
-## Contact Us
-
-If you have any questions about our safeguarding policy or procedures, please contact our Safeguarding Officer at [Safeguarding Officer Email] or [Safeguarding Officer Phone Number].
