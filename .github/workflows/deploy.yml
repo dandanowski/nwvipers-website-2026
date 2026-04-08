@@ -1,4 +1,4 @@
-name: Deploy Eleventy Site
+name: Deploy Eleventy to FTP
 
 on:
   push:
