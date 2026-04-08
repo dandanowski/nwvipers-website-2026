@@ -1,11 +1,5 @@
 .schedule {
     padding: var(--core--spacing-4xl) 0;
-    h2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font: var(--sem--typo-headline-sm);
-    }
 }
 
 .schedule__grid {

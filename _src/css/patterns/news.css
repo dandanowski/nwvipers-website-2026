@@ -1,12 +1,3 @@
-.news {
-    h2 {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        /* font: var(--sem--typo-headline-sm); */
-    }
-}
-
 .card--news {
     padding: 0;
     p {

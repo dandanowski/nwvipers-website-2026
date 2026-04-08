@@ -1,0 +1,76 @@
+.contact {
+    padding-block: var(--core--spacing-4xl);
+    .contact--options {
+        display: grid;
+        grid-template-areas: 
+            "map map join"
+            "map map general"
+            "map map media"
+            "map map sponsorship";
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    .card--location {
+        grid-area: map;
+        padding: 0;
+    }
+    .card--join {
+        grid-area: join;
+    }
+    .card--general {
+        grid-area: general;
+    }
+    .card--media {
+        grid-area: media;
+    }
+    .card--sponsorship {
+        grid-area: sponsorship;
+    }
+    .card {
+        /* padding: var(--core--spacing-lg); */
+        h2 {
+            margin: 0 0 var(--core--spacing-md);
+            font: var(--sem--typo-title-md);
+            text-transform: uppercase;
+            color: var(--core--color-ui-secondary-s090);
+            display: flex;
+            align-items: center;
+            gap: var(--core--spacing-md);
+        }
+        p {
+            margin: 0;
+            font: var(--sem--typo-body-md);
+        }
+    }
+}
+
+@container contentWrap (max-width: 940px) {
+    .contact{
+        .contact--options {
+            grid-template-areas: 
+                "join general"
+                "media sponsorship"
+                "map map"
+                "map map";
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+@container contentWrap (max-width: 720px) {
+    .contact {
+        .contact--options {
+            grid-template-areas: 
+                "join"
+                "general"
+                "media"
+                "sponsorship"
+                "map"
+                "map";
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+    }
+}

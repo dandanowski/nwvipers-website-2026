@@ -41,3 +41,4 @@
 @import "./patterns/news.css" layer(site.patterns);
 @import "./patterns/gallery.css" layer(site.patterns);
 @import "./patterns/faqs.css" layer(site.patterns);
+@import "./patterns/contact.css" layer(site.patterns);
