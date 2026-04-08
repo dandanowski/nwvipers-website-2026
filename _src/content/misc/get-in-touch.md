@@ -1,5 +1,5 @@
 ---
 title: Get in Touch
-layout: section-landing
+layout: contact
 permalink: /get-in-touch/
 ---

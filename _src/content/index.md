@@ -7,5 +7,3 @@ layout: home
 bodyClassName: home
 permalink: '/'
 ---
-
-Home page

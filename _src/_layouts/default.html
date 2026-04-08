@@ -8,6 +8,7 @@
         {% render "site-header.html", site: site %}
 
         <main class="site--content" aria-label="Content">
+            {% include "section-hero.html", title: title, subtitle: subtitle %}
             {{ content }}
             {% include "section-sponsors.html" %}
             {% include "section-league.html" %}

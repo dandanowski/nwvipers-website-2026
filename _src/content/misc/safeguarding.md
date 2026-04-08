@@ -18,9 +18,7 @@ The Northwest Vipers are committed to the safeguarding and protection of all chi
 
 If you have any concerns about the safety or well-being of any member of our club, please contact our Safeguarding Officer:
 
-**[Safeguarding Officer Name]**
-**[Safeguarding Officer Email]**
-**[Safeguarding Officer Phone Number]**
+- **Niall Lyons** | **[Email]({{ email.safeguarding }})**
 
 ## Policies and Procedures
 
@@ -32,10 +30,10 @@ We have a comprehensive safeguarding policy that outlines our commitment to prot
 
 If you have any concerns about the safety or well-being of any member of our club, please follow the procedures outlined in our safeguarding policy. You can also contact the following organisations for support:
 
-- ** NSPCC:** 0808 800 5000
-- ** Childline:** 0800 1111
-- ** NSPCC Northern Ireland:** 0808 800 5000
-- ** NSPCC Republic of Ireland:** 0818 50 40 50
+- **NSPCC:** 0808 800 5000
+- **Childline:** 0800 1111
+- **NSPCC Northern Ireland:** 0808 800 5000
+- **NSPCC Republic of Ireland:** 0818 50 40 50
 
 ## Training and Development
 
@@ -45,12 +43,12 @@ All our coaches and volunteers are required to undergo regular safeguarding trai
 
 Here are some useful resources for safeguarding in sport:
 
-- ** NSPCC:** [https://www.nspcc.org.uk/](https://www.nspcc.org.uk/)
-- ** Childline:** [https://www.childline.org.uk/](https://www.childline.org.uk/)
-- ** NSPCC Northern Ireland:** [https://www.nspcc.org.uk/what-we-do/about-us/our-services/northern-ireland/](https://www.nspcc.org.uk/what-we-do/about-us/our-services/northern-ireland/)
-- ** NSPCC Republic of Ireland:** [https://www.nspcc.org.uk/what-we-do/about-us/our-services/republic-of-ireland/](https://www.nspcc.org.uk/what-we-do/about-us/our-services/republic-of-ireland/)
-- ** Sport Northern Ireland:** [https://www.sportni.net/](https://www.sportni.net/)
-- ** Sport Ireland:** [https://www.sportireland.ie/](https://www.sportireland.ie/)
+- **[NSPCC](https://www.nspcc.org.uk/)**
+- **[Childline](https://www.childline.org.uk/)**
+- **[NSPCC Northern Ireland](https://www.nspcc.org.uk/what-we-do/about-us/our-services/northern-ireland/)**
+- **[NSPCC Republic of Ireland](https://www.nspcc.org.uk/what-we-do/about-us/our-services/republic-of-ireland/)**
+- **[Sport Northern Ireland](https://www.sportni.net/)**
+- **[Sport Ireland](https://www.sportireland.ie/)**
 
 ## Contact Us
 
