@@ -23,9 +23,7 @@ With the 2021 season cancelled due to Covid-19, the Vipers took matters into the
 After years of uncertainty and the loss of their original home ground in Drumahoe due to flooding, the Vipers finally found a permanent base. The Vale Centre in Greysteel now stands as the home of the club — the Viper Pit — and a place the team proudly represents as they continue to grow and compete for years to come.
 
 ## Unleash the Venom
-A new era began in 2024 as the club rebranded from the Donegal/Derry Vipers to the Northwest Vipers. The change marked more than just a new name — it represented a renewed identity, a wider reach across the region, and a bold vision for the future. Under the banner of Unleash the Venom, the club continues to grow both on and off the field, building a stronger presence across the Northwest. In 2026 the club announced the 
+A new era began in 2024 as the club rebranded from the Donegal/Derry Vipers to the Northwest Vipers. The change marked more than just a new name — it represented a renewed identity, a wider reach across the region, and a bold vision for the future. Under the banner of Unleash the Venom, the club continues to grow both on and off the field, building a stronger presence across the Northwest. In 2026 the club announced the appointment of Paul O’Donnell as head coach for the 2026 season.
 
 ## A New Chapter
 The Vipers senior-kitted entered another exciting phase in 2026 with the appointment of new Head Coach Paul O’Donnell. His arrival signaled fresh energy, direction, and ambition as the club looks to build on its foundations and push forward competitively in the seasons ahead.
-
-
