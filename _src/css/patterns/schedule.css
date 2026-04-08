@@ -103,6 +103,12 @@
     font: var(--sem--typo-title-md);
 }
 
+.schedule__item__opponent--name--tbd {
+    color: var(--core--color-ui-neutral-n060);
+    font: var(--sem--typo-body-sm);
+    text-transform: uppercase;
+}
+
 .schedule__item__opponent--logo {
     width: 40px;
     height: 40px;

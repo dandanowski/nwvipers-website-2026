@@ -1,113 +1,111 @@
 {%- liquid
-  assign today = 'now' | date: '%Y-%m-%d'
+assign today = 'now' | date: '%Y-%m-%d'
 -%}
 {% if squad != false %}
-  <section class="schedule">
-    <div class="schedule__content content--wrap">
-      <h2 class="schedule__title filter-header">
-        <span>
-          {% if squad == 'all' %}
-            Upcoming
-          {% endif %}
-          Schedule
-        </span>
+<section class="schedule">
+  <div class="schedule__content content--wrap">
+    <h2 class="schedule__title filter-header">
+      <span>
         {% if squad == 'all' %}
-          <nav class="schedule-filters filter-group">
-            <button class="filter-btn active" data-squad="all">All Squads</button>
-            <button class="filter-btn" data-squad="senior-kitted">Senior Kitted</button>
-            <button class="filter-btn" data-squad="womens-flag">Women's Flag</button>
-            <button class="filter-btn" data-squad="mixed-flag">Mixed Flag</button>
-            <button class="filter-btn" data-squad="youth-kitted">Youth Kitted</button>
-          </nav>
+        Upcoming
         {% endif %}
-      </h2>
-      <nav class="schedule__grid">
-        {% for item in collections.match %}
-          {% assign match_date = item.data.date | date: '%Y-%m-%d' %}
-          {% if squad == item.data.squad or squad == 'all' and match_date >= today %}
-            <a
-              class="
+        Schedule
+      </span>
+      {% if squad == 'all' %}
+      <nav class="schedule-filters filter-group">
+        <button class="filter-btn active" data-squad="all">All Squads</button>
+        <button class="filter-btn" data-squad="senior-kitted">Senior Kitted</button>
+        <button class="filter-btn" data-squad="womens-flag">Women's Flag</button>
+        <button class="filter-btn" data-squad="mixed-flag">Mixed Flag</button>
+        <button class="filter-btn" data-squad="youth-kitted">Youth Kitted</button>
+      </nav>
+      {% endif %}
+    </h2>
+    <nav class="schedule__grid">
+      {% for item in collections.match %}
+      {% assign match_date = item.data.date | date: '%Y-%m-%d' %}
+      {% if squad == item.data.squad or squad == 'all' and match_date >= today %}
+      <a class="
                 schedule__item
                 {% if match_date >= today -%}
                 schedule__item--upcoming
                 {% elsif match_date < today -%}
                 schedule__item--past flourish--link
                 {% endif -%}
-              "
-              data-squad="{{ item.data.squad }}"
-              {% if match_date < today -%}
-                href="{{ item.url }}"
-              {% endif -%}
-            >
-              <header>
-                <p class="schedule__item__date">{{ item.data.date | date: '%d %b' }}</p>
-                <p class="schedule__item__time">{{ item.data.time }}</p>
-              </header>
-              <section>
-                {% if squad == 'all' %}
-                  <p class="schedule__item__squad">
-                    <span onclick="event.preventDefault(); window.location.href='/squads/{{ item.data.squad }}'">
-                      {% include 'icon.html', icon: item.data.squad %}
-                    </span>
-                  </p>
-                {% endif %}
-                <p class="schedule__item__type">
-                  {% if item.data.type == 'league' %}
-                    {% include 'icon.html', icon: 'league' %}
-                  {% elsif item.data.type == 'friendly' %}
-                    {% include 'icon.html', icon: 'friendly' %}
-                  {% endif %}
-                </p>
-                <p class="schedule__item__opponent">
-                  <span
-                    class="schedule__item__opponent--logo"
-                    style="background-image: url('/assets/afi-logos/{{ item.data.opponent }}.png');"
-                  >
-                  </span>
-                  <span class="schedule__item__opponent--name">
-                    {{ afiClubs.profile[item.data.opponent].name }}
-                  </span>
-                </p>
-                {% if item.data.score %}
-                  <p class="schedule__item__result">
-                    <span class="schedule__item__match-report">Match report</span>
-                    <span class="win-loss"> {{ item.data.result }}</span> {{ item.data.score }}
-                  </p>
-                {% else %}
-                  <p class="schedule__item__location">
-                    <i class="fa-solid fa-location-dot"></i> {{ item.data.location }}
-                  </p>
-                {% endif %}
-              </section>
-            </a>
+              " data-squad="{{ item.data.squad }}" {% if match_date < today -%} href="{{ item.url }}" {% endif -%}>
+        <header>
+          <p class="schedule__item__date">{{ item.data.date | date: '%d %b' }}</p>
+          <p class="schedule__item__time">{{ item.data.time }}</p>
+        </header>
+        <section>
+          {% if squad == 'all' %}
+          <p class="schedule__item__squad">
+            <span onclick="event.preventDefault(); window.location.href='/squads/{{ item.data.squad }}'">
+              {% include 'icon.html', icon: item.data.squad %}
+            </span>
+          </p>
           {% endif %}
-        {% endfor %}
-      </nav>
-    </div>
-  </section>
-  {% if squad == 'all' %}
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const filterBtns = document.querySelectorAll('.schedule-filters .filter-btn');
-        const scheduleItems = document.querySelectorAll('.schedule__item');
+          <p class="schedule__item__type">
+            {% if item.data.type == 'league' %}
+            {% include 'icon.html', icon: 'league' %}
+            {% elsif item.data.type == 'friendly' %}
+            {% include 'icon.html', icon: 'friendly' %}
+            {% endif %}
+          </p>
+          <p class="schedule__item__opponent">
+            {% if item.data.opponent %}
+            <span class="schedule__item__opponent--logo"
+              style="background-image: url('/assets/afi-logos/{{ item.data.opponent }}.png');">
+            </span>
+            <span class="schedule__item__opponent--name">
+              {{ afiClubs.profile[item.data.opponent].name }}
+            </span>
+            {% else %}
+            <span class="schedule__item__opponent--name schedule__item__opponent--name--tbd">
+              To be decided
+            </span>
+            {% endif %}
+          </p>
+          {% if item.data.score %}
+          <p class="schedule__item__result">
+            <span class="schedule__item__match-report">Match report</span>
+            <span class="win-loss"> {{ item.data.result }}</span> {{ item.data.score }}
+          </p>
+          {% else %}
+          <p class="schedule__item__location">
+            <i class="fa-solid fa-location-dot"></i> {{ item.data.location }}
+          </p>
+          {% endif %}
+        </section>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </nav>
+  </div>
+</section>
+{% if squad == 'all' %}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const filterBtns = document.querySelectorAll('.schedule-filters .filter-btn');
+    const scheduleItems = document.querySelectorAll('.schedule__item');
 
-        filterBtns.forEach((btn) => {
-          btn.addEventListener('click', () => {
-            filterBtns.forEach((b) => b.classList.remove('active'));
-            btn.classList.add('active');
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
 
-            const filterValue = btn.getAttribute('data-squad');
+        const filterValue = btn.getAttribute('data-squad');
 
-            scheduleItems.forEach((item) => {
-              if (filterValue === 'all' || item.getAttribute('data-squad') === filterValue) {
-                item.style.display = '';
-              } else {
-                item.style.display = 'none';
-              }
-            });
-          });
+        scheduleItems.forEach((item) => {
+          if (filterValue === 'all' || item.getAttribute('data-squad') === filterValue) {
+            item.style.display = '';
+          } else {
+            item.style.display = 'none';
+          }
         });
       });
-    </script>
-  {% endif %}
+    });
+  });
+</script>
+{% endif %}
 {% endif %}
