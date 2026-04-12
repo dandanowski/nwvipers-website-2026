@@ -159,7 +159,7 @@
         }
     }
     .schedule__item__opponent {
-        flex: 12;
+        flex: 10;
         justify-content: center;
     }
     .schedule__item__opponent--name,
@@ -171,6 +171,6 @@
     }
     .schedule__item__location,
     .schedule__item__result {
-        flex: 4;
+        flex: 6;
     }
 }
