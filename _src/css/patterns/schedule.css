@@ -153,14 +153,19 @@
     .schedule__item {
         header {
             flex-direction: column;
-        gap: var(--core--spacing-sm);
+            gap: var(--core--spacing-xs);
             height: auto;
             width: 140px;
         }
+        section {
+            padding: var(--core--spacing-sm) var(--core--spacing-xl);
+            gap: var(--core--spacing-xl);
+        }
     }
     .schedule__item__opponent {
-        flex: 8;
+        flex: 6;
         justify-content: center;
+        text-align: center;
     }
     .schedule__item__opponent--name,
     .schedule__item__match-report {
@@ -172,5 +177,6 @@
     .schedule__item__location,
     .schedule__item__result {
         flex: 6;
+        justify-content: space-between;
     }
 }
