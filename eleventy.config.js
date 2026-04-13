@@ -79,13 +79,10 @@ export default function (eleventyConfig) {
             });
 
             const thumb = metadata.webp[0];
-            let large = metadata.jpeg[metadata.jpeg.length - 1].url;
-            if (baseOutputDir !== "_site") {
-                large = `./${baseOutputDir.replace(/^\.\//, '')}` + large;
-            }
+            const large = metadata.jpeg[metadata.jpeg.length - 1];
 
             html += `
-        <a class="flourish--link gallery__item open-lightbox" data-full="${large}">
+        <a class="flourish--link gallery__item open-lightbox" data-full="${large.url}">
           <img src="${thumb.url}" 
                alt="Photo from ${srcDir}" 
                width="${thumb.width}" 
