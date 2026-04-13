@@ -45,7 +45,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # This must match your Eleventy output directory
-          path: './_site/'
+          path: './_gh-pages/'
 
   deploy:
     environment:
