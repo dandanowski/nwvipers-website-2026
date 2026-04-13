@@ -34,6 +34,13 @@ export default function (eleventyConfig) {
     });
 
     eleventyConfig.addAsyncShortcode("section_gallery", async function (srcDir) {
+        let baseOutputDir = "_site";
+        const outputArgIdx = process.argv.findIndex(arg => arg.startsWith("--output"));
+        if (outputArgIdx > -1) {
+            const arg = process.argv[outputArgIdx];
+            baseOutputDir = arg.includes("=") ? arg.split("=")[1] : process.argv[outputArgIdx + 1];
+        }
+
         const tempDir = srcDir.split("/").filter((item) => item !== "content").join("/");
         const galleryDir = "/assets/images" + tempDir;
         const fullPath = path.join(process.cwd(), "/_src" + galleryDir);
@@ -65,7 +72,7 @@ export default function (eleventyConfig) {
             let metadata = await Image(filePath, {
                 widths: [600, 1200],
                 formats: ["webp", "jpeg"],
-                outputDir: "./_site/" + galleryDir,
+                outputDir: `./${baseOutputDir.replace(/^\.\//, '')}${galleryDir}`,
                 urlPath: galleryDir
             });
 
