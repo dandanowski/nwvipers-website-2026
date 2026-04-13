@@ -1,9 +1,11 @@
 import Image from "@11ty/eleventy-img";
 import path from "node:path";
 import fs from "fs";
+import { HtmlBasePlugin } from "@11ty/eleventy";
 
 export default function (eleventyConfig) {
     // Configure Eleventy
+    eleventyConfig.addPlugin(HtmlBasePlugin);
     // Directories
     eleventyConfig.setInputDirectory("_src");
     eleventyConfig.setIncludesDirectory("_includes");
