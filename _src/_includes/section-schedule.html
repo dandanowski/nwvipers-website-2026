@@ -55,7 +55,7 @@ assign today = 'now' | date: '%Y-%m-%d'
           <p class="schedule__item__opponent">
             {% if item.data.opponent %}
             <span class="schedule__item__opponent--logo"
-              style="background-image: url('/assets/afi-logos/{{ item.data.opponent }}.png');">
+              style="background-image: url('{{ '/assets/afi-logos/' | append: item.data.opponent | append: '.png' | htmlBaseUrl }}');">
             </span>
             <span class="schedule__item__opponent--name">
               {{ afiClubs.profile[item.data.opponent].name }}
