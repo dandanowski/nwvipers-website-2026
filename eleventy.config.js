@@ -28,10 +28,25 @@ export default function (eleventyConfig) {
     });
 
     eleventyConfig.addFilter("imageList", function (dirPath) {
+        let pathPrefix = "";
+        const prefixArgIdx = process.argv.findIndex(arg => arg.startsWith("--pathprefix"));
+        if (prefixArgIdx > -1) {
+            const arg = process.argv[prefixArgIdx];
+            pathPrefix = arg.includes("=") ? arg.split("=")[1] : process.argv[prefixArgIdx + 1];
+            if (!pathPrefix.startsWith("/")) pathPrefix = "/" + pathPrefix;
+            if (!pathPrefix.endsWith("/")) pathPrefix += "/";
+        }
+
         const fullPath = path.join(process.cwd(), "_src", dirPath);
         if (!fs.existsSync(fullPath)) return "[]";
         const files = fs.readdirSync(fullPath).filter(file => /\.(jpe?g|png|webp|avif)$/i.test(file));
-        const urls = files.map(file => path.join(dirPath, file).replace(/\\/g, '/'));
+        const urls = files.map(file => {
+            let url = path.join(dirPath, file).replace(/\\/g, '/');
+            if (pathPrefix) {
+                url = pathPrefix + url.replace(/^\//, '');
+            }
+            return url;
+        });
         return JSON.stringify(urls);
     });
 
