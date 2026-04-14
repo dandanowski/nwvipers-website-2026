@@ -4,13 +4,14 @@
         <ul class="squads">
             <li class="club club--afi">
                 <a class="flourish--link" href="https://www.americanfootball.ie/"
-                    style="background-image: url('/assets/afi-logos/afi.png');" title="American Football Ireland">
+                    style="background-image: url('{{ site.baseurl }}/assets/afi-logos/afi.png');"
+                    title="American Football Ireland">
                 </a>
             </li>
             {% for club in afiClubs.all %}
             <li class="club club--{{ club }}">
                 <a class="flourish--link" href="{{ afiClubs.profile[club].url }}"
-                    style="background-image: url('/assets/afi-logos/{{ club }}.png');"
+                    style="background-image: url('{{ site.baseurl }}/assets/afi-logos/{{ club }}.png');"
                     title="{{ afiClubs.profile[club].name }}">
                 </a>
             </li>
