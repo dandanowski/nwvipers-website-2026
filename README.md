@@ -39,6 +39,7 @@ home: true/false
 location: ""
 date: 2026-09-06
 tags:
+ - "post"
  - "match"
  - "news"
  - "SQUAD-ID"
