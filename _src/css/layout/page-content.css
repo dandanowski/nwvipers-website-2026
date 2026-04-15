@@ -1,0 +1,37 @@
+.page-content {
+    h1 {
+        color: var(--core--color-ui-primary-p060);
+        font: var(--sem--typo-headline-sm);
+        text-transform: lowercase;
+        line-height: 1.2em;
+    }
+
+    h2 {
+        padding: 2rem 0 0;
+        color: var(--core--color-ui-secondary-s080);
+        font: var(--sem--typo-title-md);
+        text-transform: uppercase;
+        line-height: 1em;
+    }
+
+    table {
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 0.25rem 0;
+        }
+
+        td {
+            border-block-end: 1px solid var(--core--color-ui-primary-p040);
+        }
+
+        tr :first-child {
+            padding-inline-end: 4rem;
+            color: var(--core--color-ui-neutral-n070);
+            font: var(--sem--typo-body-sm);
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+    }
+}
