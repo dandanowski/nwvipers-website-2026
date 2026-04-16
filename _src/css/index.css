@@ -22,7 +22,6 @@ theme.flourish;
 @import "./layout/site-header.css" layer(site.layout);
 @import "./layout/site-footer.css" layer(site.layout);
 @import "./layout/page.css" layer(site.layout);
-@import "./layout/page-content.css" layer(site.layout);
 /* Components */
 @import "./components/button.css" layer(site.components);
 @import "./components/cards.css" layer(site.components);

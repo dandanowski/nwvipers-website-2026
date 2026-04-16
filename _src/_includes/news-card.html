@@ -1,4 +1,5 @@
-<a class="card card--news flourish--link" href="{{ article.url }}" data-squad="{{ article.data.squad }}">
+<a class="card card--news flourish--link" href="{{ article.url }}" data-squad="{{ article.data.squad }}"
+    data-tags="{{ article.data.tags | join: ' ' }}">
     <section class="card__header"
         style="background-image: url('{{ '/assets/images/news/' | append: article.data.image | htmlBaseUrl }}');">
     </section>

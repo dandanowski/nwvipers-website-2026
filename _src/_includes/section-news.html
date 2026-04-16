@@ -4,11 +4,11 @@
       <h2 class="news__title filter-header">
         <span>Latest News</span>
         <nav class="news-filters filter-group">
-          <button class="filter-btn active" data-squad="all">All News</button>
-          <button class="filter-btn" data-squad="senior-kitted">Senior Kitted</button>
-          <button class="filter-btn" data-squad="womens-flag">Women's Flag</button>
-          <button class="filter-btn" data-squad="mixed-flag">Mixed Flag</button>
-          <button class="filter-btn" data-squad="youth-kitted">Youth Kitted</button>
+          <button class="filter-btn active" data-tag="all">All News</button>
+          <button class="filter-btn" data-tag="senior-kitted">Senior Kitted</button>
+          <button class="filter-btn" data-tag="womens-flag">Women's Flag</button>
+          <button class="filter-btn" data-tag="mixed-flag">Mixed Flag</button>
+          <button class="filter-btn" data-tag="youth-kitted">Youth Kitted</button>
         </nav>
       </h2>
       <ul class="card--list">
@@ -34,10 +34,12 @@
           filterBtns.forEach((b) => b.classList.remove('active'));
           btn.classList.add('active');
 
-          const filterValue = btn.getAttribute('data-squad');
+          const filterValue = btn.getAttribute('data-tag');
 
           newsCards.forEach((card) => {
-            if (filterValue === 'all' || card.getAttribute('data-squad') === filterValue) {
+            const cardTags = card.getAttribute('data-tags') || '';
+            const tagsArray = cardTags.split(' ');
+            if (filterValue === 'all' || tagsArray.includes(filterValue)) {
               card.style.display = '';
             } else {
               card.style.display = 'none';

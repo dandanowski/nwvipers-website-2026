@@ -21,10 +21,10 @@ npm run dev:11ty
 npm run build:11ty
 ```
 
-## Maintenance
+# Maintenance
 The site uses a static site generator called 11ty. Content is written in [Markdown](https://www.markdownguide.org/basic-syntax/) and stored in the `_src/content` directory. The expectation is that the content is updated via the GitHub UI, and the site is automatically deployed via [GitHub Actions](https://docs.github.com/en/actions).
 
-### Adding a Match
+## Adding a Match
 Match reports are stored in the `_src/content/news/match/[squad]/` directory. They are named in the format `YYYY-MM-DD.md`. In the case of multiple matches on the same day use `YYYY-MM-DD-1.md`, `YYYY-MM-DD-2.md`, etc. The content of the file is as follows:
 
 ```markdown
@@ -36,10 +36,8 @@ opponent: "OPPONENT-ID"
 squad: "SQUAD-ID"
 type: "[league|tournament|friendly]"
 home: true/false
-location: ""
 date: 2026-09-06
 tags:
- - "post"
  - "match"
  - "news"
  - "SQUAD-ID"
@@ -47,6 +45,9 @@ image: "/news/match/[SQUAD-ID]/YYYY-MM-DD/YYYY-MM-DD-01.png"
 ---
 
 # [Headline]
+
+![Vipers in action]({{ image | prepend: '/assets/images/news' | htmlBaseUrl }})
+
 ## Match Snapshot
 | | |
 | --- | --- |
@@ -73,6 +74,32 @@ Photos for the match should be stored in the `_src/assets/images/news/match/[squ
 
 The image path in the match report will be used as the thumbnail image for the match report on the news page.
 
+## Adding a News Article
+All news articles should be added to the `_src/content/news/article/` directory. They should be named in the format `YYYY-MM-DD.md`. The content of the file is as follows:
 
+```markdown
+---
+layout: page
+bodyClassName: news-article
+title: "[HEADLINE]"
+subtitle: "[SUBTITLE]"
+tags:
+- "news"
+- "[TAG1]"
+- "[TAG2]"
+image: /assets/images/news/path/to/image.jpg
+date: [Publication Date]
+---
 
+# Article Headline
 
+Each line is treated as a paragraph. Be sure to add line breaks between paragraphs.
+
+- Use bullet points for lists.
+**Bold text**
+*Italic text*
+[Link Text](URL)
+```
+
+### Article Images
+Photos for articles should be stored in the `_src/assets/images/news/article/` directory. They should be named in the format `YYYY-MM-DD.jpg`, `YYYY-MM-DD-01.jpg`, etc. The images should be at most 1200px on the long side.
