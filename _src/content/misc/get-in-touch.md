@@ -1,5 +1,5 @@
 ---
-title: Get in Touch
+title: Contact
 layout: contact
-permalink: /get-in-touch/
+permalink: /contact/
 ---
