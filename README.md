@@ -46,7 +46,7 @@ image: "/news/match/[SQUAD-ID]/YYYY-MM-DD/YYYY-MM-DD-01.png"
 
 # [Headline]
 
-![Vipers in action]({{ image | prepend: '/assets/images/news' | htmlBaseUrl }})
+![Vipers in action]({{ image | prepend: '/assets/images/news' }})
 
 ## Match Snapshot
 | | |
