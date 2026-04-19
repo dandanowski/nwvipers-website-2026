@@ -9,7 +9,7 @@
   "scripts": {
     "dev:11ty": "npx @11ty/eleventy --serve",
     "build:11ty": "npx @11ty/eleventy",
-    "build:11ty:gh": "npx @11ty/eleventy --pathprefix=northwestvipers-2026 --output=_gh-pages"
+    "build:11ty:gh": "npx @11ty/eleventy --pathprefix=nwvipers-website-2026 --output=_gh-pages"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
