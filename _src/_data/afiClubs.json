@@ -53,7 +53,7 @@
         "cill-dara-crusaders": {
             "name": "Cill Dara Crusaders",
             "location": "Kildare",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/cill-dara-crusaders/"
         },
         "cork-admirals": {
             "name": "Cork Admirals",
@@ -63,12 +63,12 @@
         "cork-city-outlaws": {
             "name": "Cork City Outlaws",
             "location": "Cork",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/cork-city-outlaws/"
         },
         "antrim-stags": {
             "name": "Antrim Stags",
             "location": "County Antrim",
-            "url": "https://antrimstags.co.uk/"
+            "url": "https://americanfootball.ie/leagues/antrim-stags/"
         },
         "craigavon-cowboys": {
             "name": "Craigavon Cowboys",
@@ -78,17 +78,17 @@
         "dublin-bay-raptors": {
             "name": "Dublin Bay Raptors",
             "location": "Dublin",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/dublin-bay-raptors/"
         },
         "dublin-city-quetzals": {
             "name": "Dublin City Quetzals",
             "location": "Dublin",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/dublin-city-quetzals/"
         },
         "dublin-city-wolves": {
             "name": "Dublin City Wolves",
             "location": "Dublin",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/dublin-city-wolves/"
         },
         "dublin-rebels": {
             "name": "Dublin Rebels",
@@ -98,27 +98,27 @@
         "dublin-red-bows": {
             "name": "Dublin Red Bows",
             "location": "Dublin",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/dublin-red-bows/"
         },
         "dunboyne-wildcats": {
             "name": "Dunboyne Wildcats",
             "location": "Dunboyne, County Meath",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/dunboyne-wildcats/"
         },
         "edenderry-eagles": {
             "name": "Edenderry Eagles",
             "location": "Edenderry, County Offaly",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/edenderry-eagles/"
         },
         "lakeland-gators": {
             "name": "Lakeland Gators",
             "location": "",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/lakeland-gators/"
         },
         "laois-labs": {
             "name": "Laois Labs",
             "location": "",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/laois-labs/"
         },
         "louth-mavericks": {
             "name": "Louth Mavericks",
@@ -128,12 +128,12 @@
         "maynooth-university-hurricanes": {
             "name": "Maynooth University Hurricanes",
             "location": "Maynooth, County Kildare",
-            "url": ""
+            "url": "https://mulife.ie/club/american-football"
         },
         "north-down-dragons": {
             "name": "North Down Dragons",
             "location": "",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/north-down-dragons/"
         },
         "south-dublin-panthers": {
             "name": "South Dublin Panthers",
@@ -143,22 +143,22 @@
         "ulster-university-elks": {
             "name": "Ulster University Elks",
             "location": "",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/university-ulster-elks/"
         },
         "university-of-limerick-vikings": {
             "name": "University of Limerick Vikings",
             "location": "",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/ul-vikings/"
         },
         "university-college-dublin": {
             "name": "University College Dublin",
             "location": "",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/university-college-dublin/"
         },
         "west-dublin-rhinos": {
             "name": "West Dublin Rhinos",
             "location": "",
-            "url": ""
+            "url": "https://americanfootball.ie/leagues/west-dublin-rhinos/"
         },
         "westmeath-minotaurs": {
             "name": "Westmeath Minotaurs",
@@ -168,7 +168,7 @@
         "wexford-eagles": {
             "name": "Wexford Eagles",
             "location": "Wexford",
-            "url": "http://www.wexfordeagles.ie/"
+            "url": "https://americanfootball.ie/leagues/wexford-eagles/"
         }
     }
 }
