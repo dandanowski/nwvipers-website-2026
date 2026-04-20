@@ -110,4 +110,9 @@ export default function (eleventyConfig) {
         html += '</div></div></section>';
         return html;
     });
+
+    // Create a version string based on the current date/time
+    eleventyConfig.addShortcode("version", () => {
+        return `v=${Date.now()}`;
+    });
 };
