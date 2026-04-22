@@ -4,7 +4,7 @@ layout: page
 permalink: /squads/youth-kitted/
 squad: "youth-kitted"
 bodyClassName: squads
-subtitle: Full contact American football for ages 16 - 18
+subtitle: Full contact American football for ages 15 - 18
 ---
 Youth Football provides the next generation of players with the opportunity to experience full-contact American football in a structured and competitive environment. Running from May through to November during the senior kitted off-season, it offers a dedicated pathway for young athletes to develop their skills and understanding of the game.
 
